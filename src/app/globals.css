@@ -27,6 +27,12 @@
     transform: scale(1, 1.15);
     line-height: 1;
 }
+.font-textfooter{
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 600;
+    transform: scale(1, 1.15);
+    line-height: 20;
+}
 /**Pages**/
 /**Courses**/
 .tr-section{
