@@ -49,7 +49,7 @@ const hero = () => {
                 </h2>
             </motion.div>
             <motion.div className='mt-5'>
-                <a href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Get it now</a>
+                <a href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Get it now</a>
             </motion.div>
         </div>
         <motion.div className='sv-content flex flex-row'>
@@ -76,7 +76,7 @@ const hero = () => {
                 </h2>
             </motion.div>
             <motion.div className='mt-7'>
-                <a href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Get it now</a>
+                <a href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Get it now</a>
             </motion.div>
         </div>
         </section>
