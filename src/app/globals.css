@@ -30,8 +30,11 @@
 .font-textfooter{
     font-family: 'ClashDisplay-Variable';
     font-weight: 600;
-    transform: scale(1, 1.15);
-    line-height: 20;
+    transform: scale(1, 2);
+    line-height: 1;
+    background: -webkit-linear-gradient(#121315, #ffffff50);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
 /**Pages**/
 /**Courses**/
