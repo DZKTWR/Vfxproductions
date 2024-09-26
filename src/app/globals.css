@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'The Nautigalvfx1';
+    src: url(../../public/fonts/TheNautigalvfx1-Regular.ttf) format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+.vfx-font{
+    font-family: 'The Nautigalvfx1',sans-serif;
+}
+.slc::selection{
+    color: rgb(207, 236, 255);
+    background: transparent;
+}
+
+.font-subtext{
+    font-family: 'roboto';
+    transform: scale(1, 1.1);
+}
+.font-text{
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 600;
+    transform: scale(1, 1.15);
+    line-height: 1;
+}
+/**Pages**/
+/**Courses**/
+.tr-section{
+    min-height: 106vh;
+}
+.tr-section .tr-hero-content{
+    min-height: 106vh;
+    align-items: center;
+}
+
+.st-content{
+    width: 100%;
+}
+.sv-content video{
+    width: 100%;
+    height: auto;
+}
+
+.sv-content-themost video{
+    width: 100%;
+    height: auto;
+}
+.st-content-themost{
+    width: 100%;
+}
+
+.ms-content{
+    width: 100%;
+}
+.cdy-content{
+    width: 100%;
+}
+.mtsc-img img{
+    width: 100%;
+    height: auto;
+}
+.mtsc-text{
+    width: 100%;
+}
+
+.dyc-img{
+    width: 100%;
+    height: auto;
+}
+.dyc-text{
+    width: 100%;
+}
+
+/**section active courses**/
+/**1 mst men**/
+.mst-si-contnent img{
+    width: 100%;
+    height: auto;
+}
+
+.mst-st-content{
+    width: 100%;
+}
+.smts-content{
+    transition: 600ms;
+}
+.smts-content:hover{
+    background: rgb(184, 201, 211);
+    cursor: pointer;
+}
+.sc-hvr{
+    transition: 1s;
+}
+
+
+/**Gallery**/
+.sctr-content{
+    width: 100%;
+
+}
+.scir-content img{
+    width: 100%;
+    height: auto;
+}
+
+/**About**/
+.shct-content{
+    width: 100%;
+}
+
+
+@media (min-width: 1080px){
+    /**section learn**/
+    .sv-content {
+        width: 57%;
+    }
+    .st-content{    
+        width: 50%;
+        text-align: left;
+    }
+    /**section the most**/
+    .sv-content-themost {
+        width: 57%;
+        height: auto;
+    }
+    .st-content-themost{
+        width: 50%;
+    }
+/**section mini elements **/
+    .mtsc-img{
+        width: 30%;
+    }
+    .mtsc-text{
+        width: 90%;
+    }
+    .dyc-img{
+        width: 30%;
+    }
+    .dyc-text{
+        width: 90%;
+    }
+    
+/**section active courses**/
+/**1 mst men**/
+    .sc-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .mst-si-contnent {
+        width: 35%;
+    }
+    
+    .mst-st-content{
+        width: 65%;
+    }
+
+
+/**Gallery**/
+.sctr-content{
+    width: 58%;
+
+}
+.scir-content{
+    width: 56%;
+    height: auto;
+}
+
+/**About**/
+.shct-content{
+    width: 55%;
+}
+
+}
