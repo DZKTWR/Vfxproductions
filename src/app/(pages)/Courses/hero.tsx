@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import  { motion }  from 'framer-motion';
+import Link from "next/link";
 
 // Variantes del contenedor padre 
 const containerVariants = {
@@ -51,7 +52,9 @@ return (
           <motion.div 
           variants={itemsCotainerV}
           className='mt-7'>
-            <a href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Get it now</a>
+            <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+            Get it now
+            </Link>
           </motion.div>
         </motion.div>
         <motion.div 
@@ -76,13 +79,15 @@ return (
             Explore our top-rated video editing guides.
           </h2>
           <div className='mt-16'>
-            <a href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Watch Now</a>
+            <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+            Watch Now
+            </Link>
           </div>
           </div>
         </div>
         <section className='flex pt-5' >
           <div className='ms-content flex flex-col bg-white rounded-2xl mts-content mr-10 mt-10'>
-            <a href='#' className='flex justify-center'>
+            <Link href='#' className='flex justify-center'>
               <div className='flex flex-row mtsc-img'>
                 <Image 
                   width={100}
@@ -93,10 +98,10 @@ return (
                 <h1 className='text-2xl font-text py-1'>Mastering anime editing</h1>
                 <p className='text-base font-subtext py-1'>Create editing anime video </p>
               </div>
-              </a>
+              </Link>
           </div>
           <div className='cdy-content flex flex-col bg-white rounded-2xl dyn-content ml-10 mt-10'>
-            <a href="" className='flex justify-center'>
+            <Link href="" className='flex justify-center'>
               <div className='flex flex-row dyc-img'>
                 <Image 
                   width={100}
@@ -107,7 +112,7 @@ return (
                 <h1 className='text-2xl font-text py-1'>Creating Dynamic trasitions</h1>
                 <p className='text-base font-subtext py-1'>Discover the secrets to smooth trasitions in anime style</p>
               </div>
-            </a>
+            </Link>
           </div> 
         </section>
       </section>
@@ -125,7 +130,9 @@ return (
             </h2>
               </motion.div>
               <motion.div className='mt-16'>
-                <a href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Watch Now</a>
+                <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+                Watch Now
+                </Link>
               </motion.div>
             </div>
             <motion.div className='sv-content flex flex-row'>
@@ -136,7 +143,7 @@ return (
         </div>
         <section className='flex pt-5' >
           <div className='ms-content flex flex-col bg-white rounded-2xl mts-content mr-10 mt-10'>
-            <a href='#' className='flex justify-center'>
+            <Link href='#' className='flex justify-center'>
               <div className='flex flex-row mtsc-img'>
                 <Image 
                   width={100}
@@ -147,10 +154,10 @@ return (
                 <h1 className='text-2xl font-text py-1'>Mastering anime editing</h1>
                 <p className='text-base font-subtext py-1'>Create editing anime video </p>
               </div>
-              </a>
+              </Link>
           </div>
           <div className='cdy-content flex flex-col bg-white rounded-2xl dyn-content ml-10 mt-10'>
-            <a href="" className='flex justify-center'>
+            <Link href="" className='flex justify-center'>
               <div className='flex flex-row dyc-img'>
                 <Image 
                   width={100}
@@ -161,7 +168,7 @@ return (
                 <h1 className='text-2xl font-text py-1'>Creating Dynamic trasitions</h1>
                 <p className='text-base font-subtext py-1'>Discover the secrets to smooth trasitions in anime style</p>
               </div>
-            </a>
+            </Link>
           </div> 
         </section>
       </section>

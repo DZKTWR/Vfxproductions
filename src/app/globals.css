@@ -36,6 +36,24 @@
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
+/**menu**/
+.menu-icon{
+    display: none;
+}
+@media (max-width: 900px){
+ .menu-icon{
+    display: initial;
+ }
+ .base-navbar{
+    max-width: 10rem;
+ }
+ .navbar{
+    display: none;
+ }
+ .button-login{
+    display:none;
+ }
+}
 /**Pages**/
 /**Courses**/
 .tr-section{

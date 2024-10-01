@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from "next/link";
 import  { useEffect, useRef } from 'react';
+import Image from "next/image";
 
 const Navbar = () => {
   const listItemRef = useRef<HTMLUListElement | null>(null);
@@ -57,11 +58,14 @@ const Navbar = () => {
     <header className='z-[59]'>
       <div
       id="header"
-      className='py-2 px-9 flex items-center fixed top-[20px] max-w-[35rem] mx-auto z-[60]
+      className='base-navbar py-2 px-9 flex items-center fixed top-[20px] max-w-[35rem] mx-auto z-[60]
       justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/40 backdrop-blur-xl rounded-full border-transparent' 
       > 
+        <div className='menu-icon'>
+          <Image width={30} height={30} src="/icon-menu.png" alt='imagen de menu' />
+        </div>
         <nav 
-        className='flex flex-grow justify-evenly'>
+        className='flex flex-grow justify-evenly navbar'>
                 <ul ref={listItemRef}
                 className='flex text-[#dbe3e9] text-base [&>li>a]:font-[500] [&>li>a]:inline-block 
                 [&>li>a]:px-5 [&>li>a]:py-2 [&>li>a]:roboto-font'>
@@ -71,7 +75,7 @@ const Navbar = () => {
                     <li><Link href="/About">About</Link></li>
                </ul>
         </nav>
-        <button className='border border-white rounded-3xl py-2 px-6 text-white'>Login</button>
+        <button className='border border-white rounded-3xl py-2 px-6 text-white button-login'>Login</button>
         <div
           id="menu-backdrop"
           ref={menuBackDropRef}

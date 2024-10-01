@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Herocontent = () => {
   return (
@@ -18,7 +19,7 @@ const Herocontent = () => {
                 </div>
             <section className='py-28 items-center '>
                 <div className='grid gap-12 sc-container'>
-                    <a href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 smts-content'>
+                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
@@ -31,8 +32,8 @@ const Herocontent = () => {
                                 <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
                             </div>
                         </div >
-                    </a>
-                    <a href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 smts-content'>
+                    </Link>
+                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
@@ -45,8 +46,8 @@ const Herocontent = () => {
                                 <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
                             </div>
                         </div >
-                    </a>
-                    <a href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 smts-content'>
+                    </Link>
+                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
@@ -59,8 +60,8 @@ const Herocontent = () => {
                                 <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
                             </div>
                         </div >
-                    </a>
-                    <a href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 smts-content'>
+                    </Link>
+                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
@@ -73,7 +74,7 @@ const Herocontent = () => {
                                 <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
                             </div>
                         </div >
-                    </a>
+                    </Link>
                 </div>
             </section>
         </section>

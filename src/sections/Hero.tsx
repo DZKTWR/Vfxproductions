@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { FlipWords } from "@/ui/flip-words";
+import Link from "next/link";
 
 export function FlipWordsDemo() {
     const words = ['Animation','Editing','3D blender']; {
@@ -34,10 +35,10 @@ const Hero = () => {
                         animate={{y: 0, opacity:1}}
                         transition={{ ease: "easeOut", duration: 0.5 }}
                         >
-                            <a href="/Courses" className='border-2 border-[#cfecff] rounded-full text-base inline-block font-medium px-6 py-2
+                            <Link href="/Courses" className='border-2 border-[#cfecff] rounded-full text-base inline-block font-medium px-6 py-2
                             text-[#e0e8ee] bg-[#141414bd] roboto-font'>
                                 Learn More!
-                            </a>
+                            </Link>
                         </motion.div>
                     </footer>
                 </div>

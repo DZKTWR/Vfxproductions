@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from "next/link";
 
 const hero = () => {
   return (
@@ -49,7 +50,9 @@ const hero = () => {
                 </h2>
             </motion.div>
             <motion.div className='mt-5'>
-                <a href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Get it now</a>
+                <Link href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+                Get it now
+                </Link>
             </motion.div>
         </div>
         <motion.div className='sv-content flex flex-row'>
@@ -76,7 +79,9 @@ const hero = () => {
                 </h2>
             </motion.div>
             <motion.div className='mt-7'>
-                <a href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>Get it now</a>
+                <Link href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+                Get it now
+                </Link>
             </motion.div>
         </div>
         </section>
