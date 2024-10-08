@@ -75,7 +75,7 @@ const Navbar = () => {
                     <li><Link href="/About">About</Link></li>
                </ul>
         </nav>
-        <button className='border border-white rounded-3xl py-2 px-6 text-white button-login'>Login</button>
+        <button className='border border-white rounded-3xl py-2 px-6 text-white button-login hover:bg-white/5 backdrop-blur-lg'>Login</button>
         <div
           id="menu-backdrop"
           ref={menuBackDropRef}

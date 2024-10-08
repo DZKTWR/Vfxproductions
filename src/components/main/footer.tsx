@@ -64,7 +64,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="mt-32 mb-[20px] text-[6rem] text-center font-textfooter ">
+            <div className="mt-32 mb-[20px] text-[10rem] text-center font-textfooter ">
              VFX &nbsp; PRODUCTIONS
             </div>
         </div>
