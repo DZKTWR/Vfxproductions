@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from "next/link";
-import  { useEffect, useRef } from 'react';
+import  { useEffect, useRef , useState } from 'react';
 import Image from "next/image";
 
 const Navbar = () => {
@@ -59,7 +59,7 @@ const Navbar = () => {
       <div
       id="header"
       className='base-navbar py-2 px-9 flex items-center fixed top-[20px] max-w-[35rem] mx-auto z-[60]
-      justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/40 backdrop-blur-xl rounded-full border-transparent' 
+      justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/40 backdrop-blur-xl rounded-full' 
       > 
         <div className='menu-icon'>
           <Image width={30} height={30} src="/icon-menu.png" alt='imagen de menu' />

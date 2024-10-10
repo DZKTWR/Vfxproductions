@@ -8,10 +8,10 @@ import Herocontent from './Herocontent';
 
 const page = () => {
   return (
-    <>
+    <div className='z-[20]'>
         <Hero />
         <Herocontent />
-    </>
+    </div>
   )
 }
 

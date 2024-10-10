@@ -75,7 +75,7 @@ const Hero = () => {
                             </video>
                     </div>
                 <div className='absolute flex flex-row top-auto bottom-[4rem] left-[4.5rem] right-auto z-[20] justify-evenly items-center'>
-                    <button onClick={toggleMute} className='mr-2 text-white text-xl border cursor-pointer bg-white/15 backdrop:blur-lg rounded-full '>
+                    <button onClick={toggleMute} className='mr-2 text-white text-xl border cursor-pointer hover:bg-white/25 backdrop:blur-lg rounded-full '>
                         {isMuted ? (
                             <Image width={60} height={60} src='/soundwave.png' alt='image-soundwave' className='px-4 pb-[0.58rem] pt-[0.58rem] soundwave'/>
                         ): (

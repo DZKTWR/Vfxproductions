@@ -3,9 +3,9 @@ import Hero from './hero';
 
 const page = () => {
   return (
-    <>
-      <Hero />
-    </>
+    <div className='z-[20]'>
+      <Hero  />
+    </div>
   )
 }
 

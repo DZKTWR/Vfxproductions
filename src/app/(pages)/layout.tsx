@@ -1,13 +1,23 @@
+"use client";
+
 import Navbar2 from "@/components/Navbar2";
+import { AnimatePresence } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+import Curve from '@/components/curve/curve';
 
+export default function Layout (
+    { children }: { children: React.ReactNode }) 
+    {
+        const pathname = usePathname()
 
-export default function Layout ( 
-    { children } : { children: React.ReactNode }
-){
     return (
-        <>
-           <Navbar2 />
-           {children}
+        <> 
+            <AnimatePresence mode='wait'>
+                <Curve key={pathname} >
+                  <Navbar2 />
+                  {children}
+                </Curve>
+            </AnimatePresence>
         </>
     )
 }
