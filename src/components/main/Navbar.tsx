@@ -4,8 +4,11 @@ import React from 'react';
 import Link from "next/link";
 import  { useEffect, useRef , useState } from 'react';
 import Image from "next/image";
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
+
+  //animaion type hover
   const listItemRef = useRef<HTMLUListElement | null>(null);
   const menuBackDropRef = useRef<HTMLDivElement | null>(null);
 
@@ -25,7 +28,6 @@ const Navbar = () => {
         const offsetLeft = left - containerRect.left;
         const offsettop = top - containerRect.top;
 
-        // Ajusta el estilo directamente
         menuBackDrop.style.setProperty("--left", `${offsetLeft}px`);
         menuBackDrop.style.setProperty("--top", `${offsettop}px`); 
         menuBackDrop.style.setProperty("--width", `${width}px`);
@@ -54,6 +56,11 @@ const Navbar = () => {
     }
   }, []);
 
+
+  // menu responsive
+
+
+
   return (
     <header className='z-[59]'>
       <div
@@ -61,8 +68,11 @@ const Navbar = () => {
       className='base-navbar py-2 px-9 flex items-center fixed top-[20px] max-w-[35rem] mx-auto z-[60]
       justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/40 backdrop-blur-xl rounded-full' 
       > 
-        <div className='menu-icon'>
+        <div className='menu-open'>
           <Image width={30} height={30} src="/icon-menu.png" alt='imagen de menu' />
+        </div>
+        <div className='menu-closed'>
+
         </div>
         <nav 
         className='flex flex-grow justify-evenly navbar'>
