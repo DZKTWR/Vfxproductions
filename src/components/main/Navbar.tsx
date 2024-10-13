@@ -4,11 +4,13 @@ import React from 'react';
 import Link from "next/link";
 import  { useEffect, useRef , useState } from 'react';
 import Image from "next/image";
-import { motion, AnimatePresence } from 'framer-motion';
+import Menu from "./menu";
+import Magnetic from "@/components/magnetic";
+
 
 const Navbar = () => {
 
-  //animaion type hover
+  //animation type hover
   const listItemRef = useRef<HTMLUListElement | null>(null);
   const menuBackDropRef = useRef<HTMLDivElement | null>(null);
 
@@ -56,24 +58,34 @@ const Navbar = () => {
     }
   }, []);
 
+ //menu-responsive 
+   const [isMenuOpen, setIsMeuOpen] = useState(false);
+   const [isMoblie, setIsMoblie] = useState(false);
 
-  // menu responsive
+   useEffect(() => {
+    const handleResize = () =>{
+      setIsMoblie(window.innerWidth < 900);
+    };
+    handleResize ();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+   }, []);
 
+     const toggleMenu = () => {
+      setIsMeuOpen(!isMenuOpen);
+    };
 
 
   return (
-    <header className='z-[59]'>
+    <header>
+      <button className='menu-open cursor-pointer menu-icon absolute top-[20px] left-auto right-4 z-[61] border border-white p-3 rounded-full' onClick={toggleMenu} aria-label='Toggle menu'>
+            <Image width={25} height={25} src="/icon-menu.svg" alt='image of menu'/>
+       </button> 
       <div
       id="header"
       className='base-navbar py-2 px-9 flex items-center fixed top-[20px] max-w-[35rem] mx-auto z-[60]
       justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/40 backdrop-blur-xl rounded-full' 
-      > 
-        <div className='menu-open'>
-          <Image width={30} height={30} src="/icon-menu.png" alt='imagen de menu' />
-        </div>
-        <div className='menu-closed'>
-
-        </div>
+      >  
         <nav 
         className='flex flex-grow justify-evenly navbar'>
                 <ul ref={listItemRef}
@@ -85,7 +97,10 @@ const Navbar = () => {
                     <li><Link href="/About">About</Link></li>
                </ul>
         </nav>
-        <button className='border border-white rounded-3xl py-2 px-6 text-white button-login hover:bg-white/5 backdrop-blur-lg'>Login</button>
+        <Magnetic>
+          <button className='border border-white rounded-3xl py-2 px-6 text-white button-login hover:bg-white/5 backdrop-blur-lg'>Login</button>
+        </Magnetic>
+
         <div
           id="menu-backdrop"
           ref={menuBackDropRef}
@@ -97,9 +112,12 @@ const Navbar = () => {
           opacity-0 -z-10"
         />
       </div>
+      
+      { isMoblie && <Menu isOpen={isMenuOpen} onClose={() => setIsMeuOpen(false)}/>}
+
     </header>
 
   )
 }
 
-export default Navbar
+export default Navbar;

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FlipWords } from "@/ui/flip-words";
 import Link from "next/link";
 import Image from 'next/image';
+import Magnetic from "@/components/magnetic";
 
 export function FlipWordsDemo() {
     const words = ['Animation','Editing','3D blender']; {
@@ -48,7 +49,7 @@ const Hero = () => {
                         animate={{y: 0,opacity:1}}
                         transition={{ ease: "easeOut", duration: 0.2 }}
                         >
-                            <h1 className='text-[4.5rem] sm:text-[6.7rem] bg-clip-text vfx-font text-[#e0e8ee] slc'>
+                            <h1 className='text-[4.5rem] sm:text-[6.7rem] bg-clip-text vfx-font text-[#e0e8ee] slc '>
                                     VFX Productions
                             </h1>
                             <h2 className='relative -top-2 text-[1.2rem] sm:text-[1.7rem] sm:pb-4 text-[#e0e8ee] py-1 roboto-font slc'>
@@ -62,10 +63,12 @@ const Hero = () => {
                         animate={{y: 0, opacity:1}}
                         transition={{ ease: "easeOut", duration: 0.5 }}
                         >
-                            <Link href="/Courses" className='border-2 border-[#cfecff] rounded-full text-lg inline-block font-medium px-6 py-2
-                            text-[#e0e8ee] roboto-font bttn-learn '>
-                                Learn More!
-                            </Link>
+                            <Magnetic>
+                                 <Link href="/Courses" className='border-2 border-[#ffffff] rounded-full text-lg inline-block font-medium px-6 py-2
+                                 text-[#e0e8ee] roboto-font bttn-learn '>
+                                     Learn More!
+                                 </Link>
+                            </Magnetic>
                         </motion.div>
                     </footer>
                 </div>
@@ -74,19 +77,23 @@ const Hero = () => {
                                 <source src='animation1.mp4' type='video/mp4'/>
                             </video>
                     </div>
-                <div className='absolute flex flex-row top-auto bottom-[4rem] left-[4.5rem] right-auto z-[20] justify-evenly items-center'>
-                    <button onClick={toggleMute} className='mr-2 text-white text-xl border cursor-pointer hover:bg-white/25 backdrop:blur-lg rounded-full '>
-                        {isMuted ? (
-                            <Image width={60} height={60} src='/soundwave.png' alt='image-soundwave' className='px-4 pb-[0.58rem] pt-[0.58rem] soundwave'/>
-                        ): (
-                         <video loop muted playsInline autoPlay style={{ pointerEvents: 'none' } }ref={soundwaveRef} width={60} height={60} className='soundwave'>
-                            <source src='soundmuted.webm' type='video/webm' />
-                         </video>
-                        )}
-                    </button>
-                    <button className='ml-2'>
-                        <Image height={30} width={27} src='/global.png' alt='image-global' className='globalcolor'/>
-                    </button>
+                <div className='absolute flex flex-row top-auto bottom-[4rem] left-[4.5rem] right-auto z-[20] justify-evenly items-center iconsw-responsive'>
+                    <Magnetic>
+                        <button onClick={toggleMute} className='mr-2 text-white text-xl border cursor-pointer hover:bg-white/25 backdrop:blur-lg rounded-full '>
+                            {isMuted ? (
+                                <Image width={60} height={60} src='/soundwave.png' alt='image-soundwave' className='px-4 pb-[0.58rem] pt-[0.58rem] soundwave'/>
+                            ): (
+                             <video loop muted playsInline autoPlay style={{ pointerEvents: 'none' } }ref={soundwaveRef} width={60} height={60} className='soundwave'>
+                                <source src='soundmuted.webm' type='video/webm' />
+                             </video>
+                            )}
+                        </button>
+                    </Magnetic>
+                   <Magnetic>
+                       <button className='ml-2'>
+                            <Image height={30} width={27} src='/global.png' alt='image-global' className='globalcolor'/>
+                        </button>
+                   </Magnetic>
                 </div>
             </section>
             

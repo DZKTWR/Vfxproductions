@@ -30,13 +30,12 @@
 .font-textfooter{
     font-family: 'ClashDisplay-Variable';
     font-weight: 600;
+    font-size: clamp(2rem, 0.8rem + 7.033vw, 10rem);
     transform: scale(1, 2);
-    line-height: 1;
-    background: -webkit-linear-gradient(#121315, #7e7e7e27);
+    background: -webkit-linear-gradient(#121315, #4d4d4d27);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
-
 
 .curve{
     svg, .background{
@@ -64,7 +63,6 @@
         text-align: center;
     }
 }
-
 
 /*Index**/
 .bttn-learn:hover{
@@ -95,18 +93,36 @@
     display: none;
 }
 @media (max-width: 900px){
- .menu-icon{
-    display: initial;
- }
- .base-navbar{
-    max-width: 10rem;
- }
- .navbar{
-    display: none;
- }
- .button-login{
-    display:none;
- }
+
+    /**Index**/
+    .iconsw-responsive{
+        bottom: auto;
+        top: 20px;
+        left: 16px;
+    }
+
+    /**Navbar 1**/
+    .menu-icon{
+        display: initial; 
+     }
+     .base-navbar{
+        display: none;
+     }
+     .navbar{
+        display: none;
+     }
+     .button-login{
+        display:none;
+     }
+
+     /**Navbar2**/
+     .navbar2-responsive{
+        display: none;
+     }
+     .auth-responsive{
+        display: none;
+     }
+
 }
 /**Pages**/
 /**Courses**/

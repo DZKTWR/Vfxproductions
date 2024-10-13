@@ -1,10 +1,17 @@
 "use client";
 
-import React from 'react'
+import React from 'react';
 import Link from "next/link";
-import  { useEffect, useRef } from 'react';
+import  { useEffect, useRef , useState } from 'react';
+import Image from "next/image";
+import Menu from "./menu";
+import Magnetic from "@/components/magnetic";
+
+
 
 const Navbar = () => {
+
+  //animation type hover
   const listItemRef = useRef<HTMLUListElement | null>(null);
   const menuBackDropRef = useRef<HTMLDivElement | null>(null);
 
@@ -59,13 +66,33 @@ const Navbar = () => {
     }
   }, []);
 
+  //menu-responsive 
+  const [isMenuOpen, setIsMeuOpen] = useState(false);
+  const [isMoblie, setIsMoblie] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () =>{
+      setIsMoblie(window.innerWidth < 900);
+    };
+    handleResize ();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+   }, []);
+
+   const toggleMenu = () => {
+     setIsMeuOpen(!isMenuOpen);
+   };
+
   return (
-    <header className='z-[59]'>
+    <header>
+       <button className='menu-open cursor-pointer menu-icon fixed top-[20px] left-auto right-4 z-[61] border border-white p-3 rounded-fullS' onClick={toggleMenu} aria-label='Toggle menu'>
+            <Image width={27} height={27} src="/icon-menu.svg" alt='image of menu'/>
+       </button> 
       <div
       id="header"
       className='py-5 px-24 flex items-center fixed top-0 z-[60]
       justify-between inset-x-0 bg-[#454545]/40
-      backdrop-blur-xl ' 
+      backdrop-blur-xl  navbar2-responsive' 
       >
         <div className=' flex flex-grow basis-0'>
           <Link href="/" className='text-2xl text-white vfx-font'>VFX Productions</Link>
@@ -89,15 +116,22 @@ const Navbar = () => {
           transition-all duration-500 ease-in-out
           opacity-0 -z-10 "
         />
-        <div className='flex flex-grow justify-end basis-0 gap-10'>
-          <button className='text-base text-white'>
+        <div className='flex flex-grow justify-end basis-0 gap-7'>
+          <Magnetic>
+          <button className='text-base text-white border border-white py-2 px-9 rounded-full'>
             Login
           </button>
-          <button className='text-base text-white'>
+          </Magnetic>
+          <Magnetic>
+          <button className='text-base text-white border border-white py-2 px-8 rounded-full'>
             SingUp
           </button>
+          </Magnetic>
         </div>
       </div>
+    
+      { isMoblie && <Menu isOpen={isMenuOpen} onClose={() => setIsMeuOpen(false)}/>}
+
     </header>
   )
 }
