@@ -25,14 +25,14 @@ const Footer = () => {
 
 
                     <Magnetic>
-                        <Link href="" className="flex flex-row items-center my-[15px] cursor-pointer">
+                        <Link href="https://www.youtube.com/@dazkonx" className="flex flex-row items-center my-[15px] cursor-pointer">
                              <Image src={Tiktok} width={20} height={20} alt="Image of Tiktok"/>
                             <span className="text-[15px] ml-[6px]">Tiktok</span>    
                         </Link>
                     </Magnetic>
 
                     <Magnetic>
-                        <Link href="" className="flex flex-row items-center my-[15px] cursor-pointer">
+                        <Link href="#" className="flex flex-row items-center my-[15px] cursor-pointer">
                              <Image src={Instagram} width={20} height={20} alt="Image of Instagram"/>
                              <span className="text-[15px] ml-[6px]">Instagram</span>    
                         </Link>
