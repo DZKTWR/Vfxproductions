@@ -24,14 +24,14 @@ const itemsCotainerV = {
 const hero = () => {
 return (
     <div>
-      <section className='relative w-full pt-48 pb-40 px-36 flex justify-center inset-x-0 m-auto'>  
+      <section className='relative w-full pt-48 pb-40 px-36 flex justify-center inset-x-0 m-auto sectioncor-1'>  
         <motion.div 
          variants={containerVariants}
         className='st-content flex flex-col justify-center'>
           <motion.div 
             variants={itemsCotainerV}
           >
-            <h1 className='text-[4.5rem] text-white font-text '>
+            <h1 className='text-[4.5rem] text-white font-text titlecos-1 '>
             LEARN THE  ART OF VIDEO EDITING
             </h1>
           </motion.div>
@@ -64,15 +64,15 @@ return (
           </video>
         </motion.div>
       </section>
-      <section className='relative w-full pt-40 pb-40 px-36 inset-x-0 m-auto'>
+      <section className='relative w-full pt-40 pb-40 pl-36 px-[7.5rem] inset-x-0 m-auto sectioncor-2'>
         <div className='flex justify-center py-20'>
-            <div className='sv-content-themost flex flex-row mr-10'>
+            <div className='sv-content-themost flex flex-row mr-9'>
             <video autoPlay loop playsInline muted className='w-auto rounded-[2rem]'>
             <source src='Up1 (1).webm' type='video/webm'/>
             </video>
             </div>
           <div className='st-content-themost flex flex-col justify-center'>
-          <h1 className='text-[4rem] text-white font-text'>
+          <h1 className='text-[4.5rem] text-white font-text titlecos-2'>
             THE MOST POPULAR TUTORIALS
           </h1>
           <h2 className='text-[1.3rem] text-white font-subtext mt-7'>
@@ -116,11 +116,11 @@ return (
           </div> 
         </section>
       </section>
-      <section className='relative w-full pt-40 pb-40 px-36 inset-x-0 m-auto'>
+      <section className='relative w-full pt-40 pb-40 px-36 inset-x-0 m-auto sectioncor-3'>
         <div className='flex py-16 justify-center'>
             <div className='st-content flex flex-col justify-center'>
               <motion.div>
-            <h1 className='text-[4rem] text-white font-text '>
+            <h1 className='text-[4rem] text-white font-text titlecos-3'>
             RECENTLY ADDED
             </h1>
               </motion.div>

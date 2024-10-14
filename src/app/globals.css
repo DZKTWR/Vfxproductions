@@ -115,17 +115,147 @@
         display:none;
      }
 
-     /**Navbar2**/
-     .navbar2-responsive{
-        display: none;
-     }
-     .auth-responsive{
-        display: none;
-     }
 
 }
+
+.menu-icon2{
+    display: none;
+}
+@media (max-width: 1100px) {
+     /**Navbar2**/
+    .navbar2-responsive{
+         display: none;
+    }
+    .auth-responsive{
+         display: none;
+     }
+    .menu-icon2{
+        display: initial;
+    }
+}
+
+
 /**Pages**/
 /**Courses**/
+
+@media (max-width: 1790px) {
+    .sectioncor-1{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .titlecos-1{
+        font-size: 3.9rem;
+    }
+
+    .sectioncor-2{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .titlecos-2{
+        font-size: 3.8rem;
+    }
+
+    .sectioncor-3{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .titlecos-3{
+        font-size: 3.8rem;
+    }
+    /**active courses**/
+    .sectionart{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .titleact-1{
+        font-size: 5.3rem;
+    }
+
+    .titlemastact-1{
+        font-size: 2rem;
+    }
+    .titlemastact-2{
+        font-size: 2rem;
+    }
+    .titlemastact-3{
+        font-size: 2rem;
+    }    
+    .titlemastact-4{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1486px) {
+    .sectioncor-1{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .titlecos-1{
+        font-size: 3.3rem;
+    }
+
+    .sectioncor-2{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .titlecos-2{
+        font-size: 3.3rem;
+    }
+
+    .sectioncor-3{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .titlecos-3{
+        font-size: 3.3rem;
+      }
+    
+       /**active courses**/
+    .titleact-1{
+        font-size: 5.3rem;
+    }
+    .titlemastact-1{
+        font-size: 2rem;
+    }
+    .titlemastact-2{
+        font-size: 2rem;
+    }
+    .titlemastact-3{
+        font-size: 2rem;
+    }    
+    .titlemastact-4{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1486px){
+    .sectioncor-1{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .titlecos-1{
+        font-size: 3.3rem;
+    }
+
+    .sectioncor-2{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .titlecos-2{
+        font-size: 3.3rem;
+    }
+
+    .sectioncor-3{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .titlecos-3{
+        font-size: 3.3rem;
+      }
+
+
+}
+
 .tr-section{
     min-height: 106vh;
 }
@@ -225,7 +355,7 @@
         height: auto;
     }
     .st-content-themost{
-        width: 50%;
+        width: 60%;
     }
 /**section mini elements **/
     .mtsc-img{

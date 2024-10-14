@@ -5,9 +5,9 @@ import Link from "next/link";
 const Herocontent = () => {
   return (
     <div>
-        <section className='relative w-full pt-48 pb-40 px-36 inset-x-0 m-auto'>
+        <section className='relative w-full pt-48 pb-40 px-36 inset-x-0 m-auto sectionart'>
                 <div className='flex flex-col justify-center items-center '>
-                    <h1 className='text-[6rem] font-text text-white'>
+                    <h1 className='text-[6rem] font-text text-white titleact-1'>
                         <span className= 'block text-center'>
                             ACTIVE
                         </span>
@@ -28,7 +28,7 @@ const Herocontent = () => {
                                 src="/Curso1.png" alt="" className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
-                                <h1 className='text-[2.5rem] font-text'>Mastering anime editing</h1>
+                                <h1 className='text-[2.5rem] titlemastact-1 font-text'>Mastering anime editing</h1>
                                 <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
                             </div>
                         </div >
@@ -42,7 +42,7 @@ const Herocontent = () => {
                                 src="/Curso1.png" alt="" className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
-                                <h1 className='text-[2.5rem] font-text'>Mastering anime editing</h1>
+                                <h1 className='text-[2.5rem] titlemastact-2 font-text'>Mastering anime editing</h1>
                                 <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
                             </div>
                         </div >
@@ -56,7 +56,7 @@ const Herocontent = () => {
                                 src="/Curso1.png" alt="" className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
-                                <h1 className='text-[2.5rem] font-text'>Mastering anime editing</h1>
+                                <h1 className='text-[2.5rem] titlemastact-3 font-text'>Mastering anime editing</h1>
                                 <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
                             </div>
                         </div >
@@ -70,7 +70,7 @@ const Herocontent = () => {
                                 src="/Curso1.png" alt="" className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
-                                <h1 className='text-[2.5rem] font-text'>Mastering anime editing</h1>
+                                <h1 className='text-[2.5rem] titlemastact-4 font-text'>Mastering anime editing</h1>
                                 <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
                             </div>
                         </div >

@@ -72,7 +72,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () =>{
-      setIsMoblie(window.innerWidth < 900);
+      setIsMoblie(window.innerWidth < 1100);
     };
     handleResize ();
     window.addEventListener('resize', handleResize);
@@ -85,7 +85,7 @@ const Navbar = () => {
 
   return (
     <header>
-       <button className='menu-open cursor-pointer menu-icon fixed top-[20px] left-auto right-4 z-[61] border border-white p-3 rounded-fullS' onClick={toggleMenu} aria-label='Toggle menu'>
+       <button className='menu-open cursor-pointer menu-icon2 fixed top-[20px] left-auto right-4 z-[61] border border-white p-3 rounded-full' onClick={toggleMenu} aria-label='Toggle menu'>
             <Image width={27} height={27} src="/icon-menu.svg" alt='image of menu'/>
        </button> 
       <div
