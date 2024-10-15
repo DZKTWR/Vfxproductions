@@ -55,9 +55,9 @@
         position: absolute;
         left: 50%;
         top: 40%;
-        color: rgb(255, 255, 255);
+        color: #e2e8f0;
         font-family: 'The Nautigalvfx1',sans-serif;
-        font-size: 6rem;
+        font-size: 5.5rem;
         z-index: 99;
         transform: translateX(-50%);
         text-align: center;
@@ -218,7 +218,7 @@
         padding-right: 5.5rem;
     }
     .titlecos-3{
-        font-size: clamp(3.15rem, 3.7818vw + .2876rem, 3.8rem)3.15rem;
+        font-size: clamp(3.15rem, 3.7818vw + .2876rem, 3.8rem);
       }
     
          /**active courses**/
@@ -227,7 +227,7 @@
         padding-right: 5.5rem;
     }
     .titleact-1{
-        font-size: clamp(4.8rem, 2.9091vw + 2.5982rem, 5.3rem)4.8rem;
+        font-size: clamp(4.8rem, 2.9091vw + 2.5982rem, 5.3rem);
     }
     .subt-act-1{
         font-size: 1.4rem;
@@ -373,6 +373,19 @@
          margin-top: 0;
          margin-bottom: 0;
      }
+     .titlemastact-1{
+        font-size: clamp(1.8rem, 1.1636vw + .9193rem, 2rem);
+    }
+    .titlemastact-2{
+        font-size: clamp(1.8rem, 1.1636vw + .9193rem, 2rem);
+    }
+    .titlemastact-3{
+        font-size: clamp(1.8rem, 1.1636vw + .9193rem, 2rem);
+    }    
+    .titlemastact-4{
+        font-size: clamp(1.8rem, 1.1636vw + .9193rem, 2rem);
+    }
+
 }
 @media (max-width: 1100px){
     .sectioncor-1{
@@ -413,6 +426,411 @@
             margin-top: 3rem;
         }
     }
+}
+
+@media (max-width: 800px){
+    .sectioncor-1{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .sectioncor-2{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .sectioncor-3{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+    .secmen-1{
+
+        .ms-content{
+            margin-bottom: 1rem;
+            margin-right: 0;
+            margin-left: 0;
+            .mtsc-img {
+                width: 24%;
+            }
+            .mtsc-text{
+                width: 85%;
+            }
+            .tmstm-1{
+                font-size: 1.4rem;
+            }
+            .pmstm-1{
+                font-size: 1rem;
+            }
+        }
+        .cdy-content{
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 2.5rem;
+            .dyc-img{
+                width: 24%;
+            }
+            .dyc-text{
+                width: 85%;
+            }
+            .tmstm-2{
+                font-size: 1.4rem;
+            }
+            .pmstm-2{
+                font-size: 1rem;
+            }
+        }
+    }
+    .secmen-2{
+
+        .ms-content{
+            margin-bottom: 1rem;
+            margin-right: 0;
+            margin-left: 0;
+            .mtsc-img {
+                width: 24%;
+            }
+            .mtsc-text{
+                width: 85%;
+            }
+            .tmstm-1{
+                font-size: 1.4rem;
+            }
+            .pmstm-1{
+                font-size: 1rem;
+            }
+        }
+        .cdy-content{
+            margin-left: 0rem;
+            margin-right: 0rem;
+            margin-bottom: 2.5rem;
+            .dyc-img{
+                width: 24%;
+            }
+            .dyc-text{
+                width: 85%;
+            }
+            .tmstm-2{
+                font-size: 1.4rem;
+            }
+            .pmstm-2{
+                font-size: 1rem;
+            }
+        }
+    }
+
+/**section active courses**/
+     .sectionart{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .titleact-1{
+        font-size: 3.7rem;
+    }
+    .subt-act-1{
+        font-size: 1.2rem;
+    }
+    .mst-si-contnent{
+        width: 25%;
+     }
+     .mst-st-content{
+        width: 85%;
+     }
+     .titlemastact-1{
+        font-size: 1.3rem;
+    }
+    .titlemastact-2{
+        font-size: 1.3rem;
+    }
+    .titlemastact-3{
+        font-size: 1.3rem;
+    }    
+    .titlemastact-4{
+        font-size: 1.3rem;
+    }
+    .subtxtmastct-1{
+        font-size: 1.15rem;
+    }
+    .subtxtmastct-2{
+        font-size: 1.15rem;
+    }
+    .subtxtmastct-3{
+        font-size: 1.15rem;
+    }
+    .subtxtmastct-4{
+        font-size: 1.15rem;
+    }
+
+    
+}
+
+@media (max-width: 620px){
+    .secmen-1{
+        .ms-content {
+            margin-bottom: 1rem;
+            .mtsc-img {
+                width: 24%;
+            }
+            .mtsc-text{
+                width: 85%;
+            }
+            .tmstm-1{
+                font-size: 1.2rem;
+            }
+            .pmstm-1{
+                font-size: 1rem;
+            }
+        }
+        .cdy-content {
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+            .dyc-img{
+                width: 24%;
+            }
+            .dyc-text{
+                width: 85%;
+            }
+            .tmstm-2{
+                font-size: 1.2rem;
+            }
+            .pmstm-2{
+                font-size: 1rem;
+            }
+        }
+
+    }
+    .secmen-2{
+
+        .ms-content{
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            .mtsc-img {
+                width: 24%;
+            }
+            .mtsc-text{
+                width: 85%;
+            }
+            .tmstm-1{
+                font-size: 1.2rem;
+            }
+            .pmstm-1{
+                font-size: 1rem;
+            }
+        }
+        .cdy-content{
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+            .dyc-img{
+                width: 24%;
+            }
+            .dyc-text{
+                width: 85%;
+            }
+            .tmstm-2{
+                font-size: 1.2rem;
+            }
+            .pmstm-2{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .sectioncor-1{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 0;
+        .sv-content {
+            justify-content: center;
+            height: 50%;
+            }
+        .sv-content video {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .titlecos-1{
+        font-size: 2rem;
+    }
+    .subtext-cour-1{
+        font-size: 1rem;
+    }
+    .subtext-cour-2{
+        font-size: 0.8rem;
+    }
+
+
+    .sectioncor-2{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .titlecos-2{
+        font-size: 2rem;
+    }
+    .subtext-cour-3{
+        font-size: 1rem;
+    }
+    .bttn-wacth-1{
+        margin-top: 2.7rem;
+    }
+
+
+    .sectioncor-3{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .sv-content2{
+            justify-content: center;
+            height: 70%;
+        }
+        .sv-content2 video{
+            width: 100%;
+            height: 70%;
+        }
+    }
+    .titlecos-3{
+        font-size: 2rem;
+      }
+      .subtext-cour-4{
+        font-size: 1rem;
+      }
+      .button-wacth1{
+        margin-top: 2.7rem;
+      }
+
+    .secmen-1{
+        .ms-content{
+            margin-bottom: 1rem;
+            margin-right: 0;
+            margin-left: 0;
+            .mtsc-img {
+                width: 45%;
+            }
+            .mtsc-text{
+                width: 85%;
+            }
+            .tmstm-1{
+                font-size: 1rem;
+            }
+            .pmstm-1{
+                font-size: .8rem;
+            }
+        }
+        .cdy-content{
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 2.5rem;
+            .dyc-img{
+                width: 45%;
+            }
+            .dyc-text{
+                width: 85%;
+            }
+            .tmstm-2{
+                font-size: 1rem;
+            }
+            .pmstm-2{
+                line-height: 1rem;
+                font-size: .8rem;
+            }
+        }
+    }
+    .secmen-2{
+
+        .ms-content{
+            margin-bottom: 1rem;
+            margin-right: 0;
+            margin-left: 0;
+            .mtsc-img {
+                width: 44%;
+            }
+            .mtsc-text{
+                width: 85%;
+            }
+            .tmstm-1{
+                font-size: 1rem;
+            }
+            .pmstm-1{
+                font-size: .8rem;
+            }
+        }
+        .cdy-content{
+            margin-left: 0rem;
+            margin-right: 0rem;
+            margin-bottom: 2.5rem;
+            .dyc-img{
+                width: 45%;
+            }
+            .dyc-text{
+                width: 85%;
+            }
+            .tmstm-2{
+                font-size: 1rem;
+            }
+            .pmstm-2{
+                line-height: 1rem;
+                font-size: .8rem;
+            }
+        }
+    }
+
+    /**section active courses**/
+    .sectionart{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .titleact-1{
+        font-size: 3.2rem;
+    }
+    .subt-act-1{
+        font-size: 1rem;
+    }
+    .mst-si-contnent{
+        width: 60%;
+     }
+     .mst-st-content{
+        width: 85%;
+     }
+     .sact-content-1{
+        padding: 1.5rem;
+     }
+     .sact-content-2{
+        padding: 1.5rem;
+     }
+     .sact-content-3{
+        padding: 1.5rem;
+     }
+     .sact-content-4{
+        padding: 1.5rem;
+     }
+
+    .titlemastact-1{
+        font-size: 1.1rem;
+    }
+    .titlemastact-2{
+        font-size: 1.1rem;
+    }
+    .titlemastact-3{
+        font-size: 1.1rem;
+    }    
+    .titlemastact-4{
+        font-size: 1.1rem;
+    }
+    .subtxtmastct-1{
+        margin-top: .7rem;
+        font-size: .9rem;
+    }
+    .subtxtmastct-2{
+        margin-top: .7rem;
+        font-size: .9rem;
+    }
+    .subtxtmastct-3{
+        margin-top: .7rem;
+        font-size: .9rem;
+    }
+    .subtxtmastct-4{
+        margin-top: .7rem;
+        font-size: .9rem;
+    }
+
 }
 
 .tr-section{
@@ -479,7 +897,7 @@
     transition: 600ms;
 }
 .smts-content:hover{
-    background: rgb(184, 201, 211);
+    background: #e2e8f0;
     cursor: pointer;
 }
 .sc-hvr{

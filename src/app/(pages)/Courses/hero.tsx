@@ -38,14 +38,14 @@ return (
           <motion.div
           variants={itemsCotainerV}
           >
-            <h2 className='text-[1.2rem] text-white mt-7 font-subtext'>
+            <h2 className='text-[1.2rem] text-white mt-7 font-subtext subtext-cour-1'>
             Unlook your creativity with our in-depth tutorials.
             </h2>
           </motion.div>
           <motion.div
           variants={itemsCotainerV}
           >
-            <p className='text-[1.1 rem] text-white mb-3 font-subtext'>
+            <p className='text-[1.1 rem] text-white mb-3 font-subtext subtext-cour-2'>
             Total Free
             </p>
           </motion.div>
@@ -77,12 +77,12 @@ return (
           <h1 className='text-[4.5rem] text-white font-text titlecos-2'>
             THE MOST POPULAR TUTORIALS
           </h1>
-          <h2 className='text-[1.3rem] text-white font-subtext mt-7'>
+          <h2 className='text-[1.3rem] text-white font-subtext mt-7 subtext-cour-3'>
             Explore our top-rated video editing guides.
           </h2>
-          <div className='mt-16'>
+          <div className='mt-16 bttn-wacth-1'>
         
-               <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+               <Link href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext '>
                Watch Now
                </Link>
 
@@ -90,8 +90,8 @@ return (
           </div>
         </div>
         <section className='flex pt-5 secmen-1 relative' >
-          <div className='ms-content flex flex-col bg-white rounded-2xl mts-content mr-10 mt-10'>
-            <Link href='#' className='flex justify-center'>
+          <div className='ms-content flex flex-col bg-slate-200 rounded-2xl mts-content mr-10 mt-10'>
+            <Link href='#' className='flex justify-center link-1'>
               <div className='flex flex-row mtsc-img'>
                 <Image 
                   width={500}
@@ -104,8 +104,8 @@ return (
               </div>
               </Link>
           </div>
-          <div className='cdy-content flex flex-col bg-white rounded-2xl dyn-content ml-10 mt-10'>
-            <Link href="#" className='flex justify-center'>
+          <div className='cdy-content flex flex-col bg-slate-200 rounded-2xl dyn-content ml-10 mt-10'>
+            <Link href="#" className='flex justify-center link-2'>
               <div className='flex flex-row dyc-img'>
                 <Image
                     width={300}
@@ -129,7 +129,7 @@ return (
             </h1>
               </motion.div>
               <motion.div>
-            <h2 className='text-[1.3rem] text-white mt-7 font-subtext'>
+            <h2 className='text-[1.3rem] text-white mt-7 font-subtext subtext-cour-4'>
             Explore our recent content.
             </h2>
               </motion.div>
@@ -148,8 +148,8 @@ return (
             </motion.div>
         </div>
         <section className='flex pt-5 secmen-2 relative' >
-          <div className='ms-content flex flex-col bg-white rounded-2xl mts-content mr-10 mt-10'>
-            <Link href='#' className='flex justify-center'>
+          <div className='ms-content flex flex-col bg-slate-200 rounded-2xl mts-content mr-10 mt-10'>
+            <Link href='#' className='flex justify-center link-3'>
               <div className='flex flex-row mtsc-img'>
                 <Image 
                   width={500}
@@ -162,8 +162,8 @@ return (
               </div>
               </Link>
           </div>
-          <div className='cdy-content flex flex-col bg-white rounded-2xl dyn-content ml-10 mt-10'>
-            <Link href="#" className='flex justify-center'>
+          <div className='cdy-content flex flex-col bg-slate-200 rounded-2xl dyn-content ml-10 mt-10'>
+            <Link href="#" className='flex justify-center link-4'>
               <div className='flex flex-row dyc-img'>
                 <Image 
                   width={500}

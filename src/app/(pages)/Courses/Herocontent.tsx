@@ -29,7 +29,7 @@ const Herocontent = () => {
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
                                 <h1 className='text-[2.5rem] titlemastact-1 font-text'>Mastering anime editing</h1>
-                                <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
+                                <p className='text-[1.3rem] font-subtext mt-5 subtxtmastct-1'>Create editing anime video</p>
                             </div>
                         </div >
                     </Link>
@@ -43,7 +43,7 @@ const Herocontent = () => {
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
                                 <h1 className='text-[2.5rem] titlemastact-2 font-text'>Mastering anime editing</h1>
-                                <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
+                                <p className='text-[1.3rem] font-subtext mt-5 subtxtmastct-2'>Create editing anime video</p>
                             </div>
                         </div >
                     </Link>
@@ -57,7 +57,7 @@ const Herocontent = () => {
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
                                 <h1 className='text-[2.5rem] titlemastact-3 font-text'>Mastering anime editing</h1>
-                                <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
+                                <p className='text-[1.3rem] font-subtext mt-5 subtxtmastct-3'>Create editing anime video</p>
                             </div>
                         </div >
                     </Link>
@@ -71,7 +71,7 @@ const Herocontent = () => {
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
                                 <h1 className='text-[2.5rem] titlemastact-4 font-text'>Mastering anime editing</h1>
-                                <p className='text-[1.3rem] font-subtext mt-5'>Create editing anime video</p>
+                                <p className='text-[1.3rem] font-subtext mt-5 subtxtmastct-4'>Create editing anime video</p>
                             </div>
                         </div >
                     </Link>
