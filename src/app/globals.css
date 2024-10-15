@@ -914,11 +914,70 @@
     width: 100%;
     height: auto;
 }
+@media (max-width: 1650px) {
+    .sctin-glly-1{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        .sctr-content{
+            .titlegll-1{
+             font-size: clamp(3.8rem, -1.275rem + 5.6vw, 4.5rem);
+            }
+            .cont-txt-gall-1{
+                .txtgll-1{
+        
+                }
+                .txtgll-2{
+            
+                }
+            }
+        }
+        .scir-content{
+            width: auto;
+            height: 65%;
+        }
+    }
+
+    .sctin-glly-2{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        .st-content{
+            .titlegll-2{
+                font-size: clamp(3.8rem, -1.275rem + 5.6vw, 4.5rem);
+            }
+            .txtgll-3{
+
+            }
+        }
+        .sv-content{
+
+        }
+    }
+
+    .sctin-glly-3{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        .sv-content{
+
+        }
+        .st-content{
+            .titlegll-3{
+                font-size: clamp(3.8rem, -1.275rem + 5.6vw, 4.5rem);
+            }
+            .txtgll-4{
+
+            }
+        }
+    }
+}
 
 /**About**/
 .shct-content{
     width: 100%;
 }
+
+
+
+/**responsive general**/
 @media (min-width: 1210px) {
     /**section active courses**/
 /**1 mst men**/

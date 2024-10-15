@@ -40,7 +40,7 @@ export default function Framer({ children }: FramerProps) {
       onMouseMove={handleMouse}
       onMouseLeave={reset}
       animate={{ x, y }}
-      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.15 }}
+      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.12 }}
     >
       {children}
     </motion.div>

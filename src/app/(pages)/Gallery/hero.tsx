@@ -8,10 +8,10 @@ import Link from "next/link";
 const hero = () => {
   return (
     <div>
-        <section className='relative w-full flex pt-48 pb-16 px-36 justify-center inset-x-0 m-auto'>
-            <div className='flex flex-col sctr-content pt-10'>
-                <div className='flex py-12'>
-                    <h1 className='text-[4rem] text-white font-text'>
+        <section className='relative w-full h-screen flex pt-48 pb-16 px-36 justify-center items-center inset-x-0 m-auto sctin-glly-1'>
+            <div className='flex flex-col sctr-content justify-center'>
+                <div className='flex pb-9'>
+                    <h1 className='text-[4.5rem] text-white font-text titlegll-1'>
                         <span className='block text-start'>
                             GALLERY
                         </span>
@@ -20,11 +20,11 @@ const hero = () => {
                         </span>
                     </h1>
                 </div>
-                <div className='pr-[8rem]'>
-                <p className='text-[1.2rem] text-white'>Explore our extensive collection of videos focused on video editing,visual effects, and animation. 
+                <div className='pr-[7rem] cont-txt-gall-1'>
+                <p className='text-[1.2rem] text-white txtgll-1'>Explore our extensive collection of videos focused on video editing,visual effects, and animation. 
                     This section features a diverse range of content showcasing advanced editing techniques and special effects.
                 </p>
-                <p className='text-[1.2rem] text-white pt-6'>
+                <p className='text-[1.2rem] text-white pt-6 txtgll-2'>
                     Additionally, you'll find an art gallery presenting impressive videos 
                     with effects and anime edits from our two prominent accounts: VFX Productions and Dazkon.
                 </p>
@@ -32,20 +32,20 @@ const hero = () => {
             </div>
             <div className='flex flex-row scir-content'>
                 <Image 
-                  width={800}
-                  height={800}
+                  width={1000}
+                  height={1000}
                 src="/photomontage.jpg" alt="imagen de un potomontaje de una esfera de nieve" className='rounded-[2rem]' />
             </div>
         </section>
-        <section className='relative w-full pt-40 pb-20 px-36 flex justify-center inset-x-0 m-auto'>  
+        <section className='relative w-full pt-40 pb-20 px-36 flex justify-center inset-x-0 m-auto sctin-glly-2'>  
         <div className='st-content flex flex-col justify-center'>
             <motion.div>
-                <h1 className='text-[4.5rem] text-white font-text '>
+                <h1 className='text-[4.5rem] text-white font-text titlegll-2'>
                 WATCH ALL THE VIDEOS HERE
                 </h1>
             </motion.div>
             <motion.div>
-                <h2 className='text-[1.2rem] text-white py-7 font-subtext'>
+                <h2 className='text-[1.2rem] text-white py-7 font-subtext pr-4 txtgll-3'>
                 Here you will find all the free videos on how to create special effects, how to make anime editions, also how to create animations.
                 </h2>
             </motion.div>
@@ -61,7 +61,7 @@ const hero = () => {
             </video>
         </motion.div>
         </section>
-        <section className='relative w-full pt-48 pb-20 px-36 flex justify-center inset-x-0 m-auto'>
+        <section className='relative w-full pt-48 pb-20 px-36 flex justify-center  inset-x-0 m-auto sctin-glly-3'>
         <motion.div className='sv-content flex flex-row'>
             <video autoPlay loop playsInline muted className='rounded-[2rem]'>
                 <source src='up1.mp4' type='video/mp4'/>
@@ -69,12 +69,12 @@ const hero = () => {
         </motion.div>
         <div className='st-content flex flex-col justify-center pl-16'>
             <motion.div>
-                <h1 className='text-[4.5rem] text-white font-text '>
+                <h1 className='text-[4.5rem] text-white font-text titlegll-3'>
                    Art Gallery
                 </h1>
             </motion.div>
             <motion.div>
-                <h2 className='text-[1.2rem] text-white py-6 font-subtext'>
+                <h2 className='text-[1.2rem] text-white py-6 font-subtext txtgll-4'>
                    find all the art gallery of vfx productions and dazkon a mix of anime editions and special effects, with their social networks of each one.Unlook your creativity with our in-depth tutorials.
                 </h2>
             </motion.div>

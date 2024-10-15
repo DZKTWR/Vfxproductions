@@ -60,7 +60,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
                 className="my-4"
               >
                 <Magnetic>
-                    <Link href={link.path} className="text-black text-2xl hover:text-blue-200 transition-colors font-text" onClick={onClose}>
+                    <Link href={link.path} className="text-black/40 text-2xl hover:text-black transition-colors font-text" onClick={onClose}>
                       {link.label}
                     </Link>
                 </Magnetic>
@@ -71,10 +71,19 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="absolute bottom-8 left-8 text-black font-text"
+            className="absolute bottom-8 left-8 text-black/40 hover:text-black transition-colors font-text"
           >
-            <p>dazkon@vfx.com</p>
-            <p>Paypal</p>
+            <Magnetic>
+              <Link href="" className='text-[1.2rem]'>Paypal</Link>
+            </Magnetic>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="absolute bottom-8 right-8 text-black font-text text-[1.2rem] "
+          >
+             <p>dazkon@vfx.com</p>
           </motion.div>
         </motion.div>
       )}
