@@ -11,7 +11,6 @@ interface MenuProps {
 }
 
 const menuLinks = [
-    {path: "/", label: "VFX Productions"},
     {path: "/Courses", label: "Courses"},
     {path: "/Gallery", label: "Gallery"},
     {path: "/Recourses", label: "Recourses"},
@@ -47,10 +46,10 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
           animate="open"
           exit="closed"
           variants={menuVariants}
-          className="fixed inset-0 bg-blue-500 flex flex-col items-center justify-center z-[62]"
+          className="fixed inset-0 bg-slate-200 flex flex-col items-center justify-center z-[99]"
         >
-          <div className="absolute top-[20px] right-6  cursor-pointer" onClick={onClose}>
-            <p className="text-white text-2xl">&#x2715;</p>
+          <div className="absolute top-[32px] right-7  cursor-pointer" onClick={onClose}>
+            <p className="text-black text-2xl font-text">&#x2715;</p>
           </div>
           <nav className="flex flex-col items-center">
             {menuLinks.map((link, index) => (
@@ -61,7 +60,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
                 className="my-4"
               >
                 <Magnetic>
-                    <Link href={link.path} className="text-white text-2xl hover:text-blue-200 transition-colors" onClick={onClose}>
+                    <Link href={link.path} className="text-black text-2xl hover:text-blue-200 transition-colors font-text" onClick={onClose}>
                       {link.label}
                     </Link>
                 </Magnetic>
@@ -72,10 +71,10 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="absolute bottom-8 left-8 text-white"
+            className="absolute bottom-8 left-8 text-black font-text"
           >
-            <p>info@codegrid.com</p>
-            <p>232 2342 2342</p>
+            <p>dazkon@vfx.com</p>
+            <p>Paypal</p>
           </motion.div>
         </motion.div>
       )}

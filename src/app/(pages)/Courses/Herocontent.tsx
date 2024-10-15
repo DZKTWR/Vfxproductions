@@ -15,16 +15,16 @@ const Herocontent = () => {
                             COURSES
                         </span>
                     </h1>
-                    <h2 className='text-[1.5rem] font-subtext text-white py-7'>Explore our top-rated video editing guides</h2>
+                    <h2 className='text-[1.5rem] font-subtext text-white py-7 subt-act-1' >Explore our top-rated video editing guides</h2>
                 </div>
             <section className='py-28 items-center '>
                 <div className='grid gap-12 sc-container'>
-                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 smts-content'>
+                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 sact-content-1 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
-                                width={100}
-                                height={100}
+                                width={500}
+                                height={500}
                                 src="/Curso1.png" alt="" className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
@@ -33,12 +33,12 @@ const Herocontent = () => {
                             </div>
                         </div >
                     </Link>
-                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 smts-content'>
+                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 sact-content-2 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
-                                width={100}
-                                height={100}
+                                width={500}
+                                height={500}
                                 src="/Curso1.png" alt="" className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
@@ -47,12 +47,12 @@ const Herocontent = () => {
                             </div>
                         </div >
                     </Link>
-                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 smts-content'>
+                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 sact-content-3 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
-                                    width={100}
-                                    height={100}
+                                    width={500}
+                                    height={500}
                                 src="/Curso1.png" alt="" className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>
@@ -61,12 +61,12 @@ const Herocontent = () => {
                             </div>
                         </div >
                     </Link>
-                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 smts-content'>
+                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 sact-content-4 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
-                                width={100}
-                                height={100}
+                                width={500}
+                                height={500}
                                 src="/Curso1.png" alt="" className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col justify-center mst-st-content ml-5'>

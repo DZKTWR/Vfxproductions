@@ -118,6 +118,9 @@
 
 }
 
+.icon-vfx{
+    display: none;
+}
 .menu-icon2{
     display: none;
 }
@@ -125,6 +128,13 @@
      /**Navbar2**/
     .navbar2-responsive{
          display: none;
+    }
+    .icon-vfx{
+        position: fixed;
+        display: initial;
+        top: 22px;
+        left: 16px;
+        right: auto;
     }
     .auth-responsive{
          display: none;
@@ -144,7 +154,7 @@
         padding-right: 8rem;
     }
     .titlecos-1{
-        font-size: 3.9rem;
+        font-size: clamp(3.9rem, 3.1683vw + .9554rem, 4.5rem);
     }
 
     .sectioncor-2{
@@ -152,7 +162,7 @@
         padding-right: 8rem;
     }
     .titlecos-2{
-        font-size: 3.8rem;
+        font-size: clamp(3.69rem, 4.2772vw + -.2851rem, 4.5rem);
     }
 
     .sectioncor-3{
@@ -160,7 +170,7 @@
         padding-right: 8rem;
     }
     .titlecos-3{
-        font-size: 3.8rem;
+        font-size: clamp(3.8rem, 3.6964vw + .3647rem, 4.5rem);
     }
     /**active courses**/
     .sectionart{
@@ -168,92 +178,241 @@
         padding-right: 7rem;
     }
     .titleact-1{
-        font-size: 5.3rem;
+        font-size: clamp(5.3rem, 3.6964vw + 1.8647rem, 6rem);
     }
 
     .titlemastact-1{
-        font-size: 2rem;
+        font-size: clamp(2rem, 2.6403vw + -.4538rem, 2.5rem);
     }
     .titlemastact-2{
-        font-size: 2rem;
+        font-size: clamp(2rem, 2.6403vw + -.4538rem, 2.5rem);
     }
     .titlemastact-3{
-        font-size: 2rem;
+        font-size: clamp(2rem, 2.6403vw + -.4538rem, 2.5rem);
     }    
     .titlemastact-4{
-        font-size: 2rem;
+        font-size: clamp(2rem, 2.6403vw + -.4538rem, 2.5rem);
     }
 }
 
 @media (max-width: 1486px) {
     .sectioncor-1{
-        padding-left: 7rem;
-        padding-right: 7rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
     }
     .titlecos-1{
-        font-size: 3.3rem;
+        font-size: clamp(3.27rem, 3.6655vw + .4957rem, 3.9rem);
     }
 
     .sectioncor-2{
-        padding-left: 7rem;
-        padding-right: 7rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
     }
+
     .titlecos-2{
-        font-size: 3.3rem;
+        font-size: clamp(3.15rem, 3.1418vw + .772rem, 3.69rem);
     }
 
     .sectioncor-3{
-        padding-left: 7rem;
-        padding-right: 7rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
     }
     .titlecos-3{
-        font-size: 3.3rem;
+        font-size: clamp(3.15rem, 3.7818vw + .2876rem, 3.8rem)3.15rem;
       }
     
-       /**active courses**/
-    .titleact-1{
-        font-size: 5.3rem;
+         /**active courses**/
+    .sectionart{
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
     }
+    .titleact-1{
+        font-size: clamp(4.8rem, 2.9091vw + 2.5982rem, 5.3rem)4.8rem;
+    }
+    .subt-act-1{
+        font-size: 1.4rem;
+    }
+
+    
     .titlemastact-1{
-        font-size: 2rem;
+        font-size: clamp(1.8rem, 1.1636vw + .9193rem, 2rem);
     }
     .titlemastact-2{
-        font-size: 2rem;
+        font-size: clamp(1.8rem, 1.1636vw + .9193rem, 2rem);
     }
     .titlemastact-3{
-        font-size: 2rem;
+        font-size: clamp(1.8rem, 1.1636vw + .9193rem, 2rem);
     }    
     .titlemastact-4{
-        font-size: 2rem;
+        font-size: clamp(1.8rem, 1.1636vw + .9193rem, 2rem);
     }
 }
 
-@media (max-width: 1486px){
+@media (max-width: 1210px){
+    .sectionart{
+        padding-bottom:3rem;
+    }
+
     .sectioncor-1{
-        padding-left: 7rem;
-        padding-right: 7rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
     .titlecos-1{
-        font-size: 3.3rem;
+        font-size: clamp(2.7rem, 8.2909vw + -3rem, 3.27rem);
     }
 
     .sectioncor-2{
-        padding-left: 7rem;
-        padding-right: 7rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
     .titlecos-2{
-        font-size: 3.3rem;
+        font-size: clamp(2.7rem, 6.5455vw + -1.8rem, 3.15rem);
+    }
+    .secmen-1{
+        flex-wrap: wrap;
+
+        .ms-content{
+            margin-bottom: 1rem;
+            margin-right: 1.5rem;
+            margin-left: 1.5rem;
+            .mtsc-img {
+                width: 18%;
+            }
+            .mtsc-text{
+                width: 85%;
+            }
+            .tmstm-1{
+                font-size: 1.9rem;
+            }
+            .pmstm-1{
+                font-size: 1.2rem;
+            }
+        }
+        .cdy-content{
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 2.5rem;
+            .dyc-img{
+                width: 18%;
+            }
+            .dyc-text{
+                width: 85%;
+            }
+            .tmstm-2{
+                font-size: 1.9rem;
+            }
+            .pmstm-2{
+                font-size: 1.2rem;
+            }
+        }
     }
 
     .sectioncor-3{
-        padding-left: 7rem;
-        padding-right: 7rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
     .titlecos-3{
-        font-size: 3.3rem;
+        font-size: clamp(2.7rem, 6.5455vw + -1.8rem, 3.15rem);
+      }
+      .secmen-2{
+        flex-wrap: wrap;
+
+        .ms-content{
+            margin-bottom: 1rem;
+            margin-right: 1.5rem;
+            margin-left: 1.5rem;
+            .mtsc-img {
+                width: 18%;
+            }
+            .mtsc-text{
+                width: 85%;
+            }
+            .tmstm-1{
+                font-size: 1.9rem;
+            }
+            .pmstm-1{
+                font-size: 1.2rem;
+            }
+        }
+        .cdy-content{
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 2.5rem;
+            .dyc-img{
+                width: 18%;
+            }
+            .dyc-text{
+                width: 85%;
+            }
+            .tmstm-2{
+                font-size: 1.9rem;
+            }
+            .pmstm-2{
+                font-size: 1.2rem;
+            }
+        }
       }
 
+     /**section active courses**/
+     .sectionart{
+         padding-left: 3.5rem;
+         padding-right: 3.5rem;
+     }
+     .mst-si-contnent{
+        width: 25%;
+     }
+     .mst-st-content{
+        width: 85%;
+     }
+     
+     .sact-content-2{
+         margin-top: 0;
+         margin-bottom: 0;
+     }
+     .sact-content-4{
+         margin-top: 0;
+         margin-bottom: 0;
+     }
+}
+@media (max-width: 1100px){
+    .sectioncor-1{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        gap: 2rem;
+        flex-wrap: wrap-reverse;
+        .sv-content {
+            justify-content: center;
+            height: 70%;
+        }
+        .sv-content video {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sctioncor-2{
+        flex-wrap: wrap;
+        gap: 2rem;
+        .sv-content-themost {
+            margin-right: 0;
+        }
+    }
+    .sctioncor-3{
+        flex-wrap: wrap-reverse;
+        gap: 2rem;
 
+
+        .sv-content2{
+            justify-content: center;
+            height: 70%;
+        }
+        .sv-content2 video{
+            width: 100%;
+            height: 70%;
+        }
+        .button-wacth1{
+            margin-top: 3rem;
+        }
+    }
 }
 
 .tr-section{
@@ -267,12 +426,16 @@
 .st-content{
     width: 100%;
 }
-.sv-content video{
+.sv-content2 {
+    width: 100%;
+    height: auto;
+}
+.sv-content {
     width: 100%;
     height: auto;
 }
 
-.sv-content-themost video{
+.sv-content-themost video {
     width: 100%;
     height: auto;
 }
@@ -294,7 +457,7 @@
     width: 100%;
 }
 
-.dyc-img{
+.dyc-img img{
     width: 100%;
     height: auto;
 }
@@ -338,10 +501,26 @@
 .shct-content{
     width: 100%;
 }
+@media (min-width: 1210px) {
+    /**section active courses**/
+/**1 mst men**/
+.sc-container{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.mst-si-contnent {
+    width: 35%;
+}
 
+.mst-st-content{
+    width: 65%;
+}
+}
 
-@media (min-width: 1080px){
+@media (min-width: 1100px){
     /**section learn**/
+    .sv-content2 {
+        width: 57%;
+    }
     .sv-content {
         width: 57%;
     }
@@ -371,18 +550,6 @@
         width: 90%;
     }
     
-/**section active courses**/
-/**1 mst men**/
-    .sc-container{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .mst-si-contnent {
-        width: 35%;
-    }
-    
-    .mst-st-content{
-        width: 65%;
-    }
 
 
 /**Gallery**/

@@ -24,7 +24,7 @@ const itemsCotainerV = {
 const hero = () => {
 return (
     <div>
-      <section className='relative w-full pt-48 pb-40 px-36 flex justify-center inset-x-0 m-auto sectioncor-1'>  
+      <section className='relative w-screen h-screen pt-48 pb-40 px-36 flex justify-center inset-x-0 m-auto sectioncor-1'>  
         <motion.div 
          variants={containerVariants}
         className='st-content flex flex-col justify-center'>
@@ -52,9 +52,11 @@ return (
           <motion.div 
           variants={itemsCotainerV}
           className='mt-7'>
-            <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-            Get it now
-            </Link>
+
+              <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+              Get it now
+              </Link>
+
           </motion.div>
         </motion.div>
         <motion.div 
@@ -65,8 +67,8 @@ return (
         </motion.div>
       </section>
       <section className='relative w-full pt-40 pb-40 pl-36 px-[7.5rem] inset-x-0 m-auto sectioncor-2'>
-        <div className='flex justify-center py-20'>
-            <div className='sv-content-themost flex flex-row mr-9'>
+        <div className='flex justify-center py-20 sctioncor-2'>
+            <div className='sv-content-themost flex flex-row mr-8 relative'>
             <video autoPlay loop playsInline muted className='w-auto rounded-[2rem]'>
             <source src='Up1 (1).webm' type='video/webm'/>
             </video>
@@ -79,45 +81,47 @@ return (
             Explore our top-rated video editing guides.
           </h2>
           <div className='mt-16'>
-            <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-            Watch Now
-            </Link>
+        
+               <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+               Watch Now
+               </Link>
+
           </div>
           </div>
         </div>
-        <section className='flex pt-5' >
+        <section className='flex pt-5 secmen-1 relative' >
           <div className='ms-content flex flex-col bg-white rounded-2xl mts-content mr-10 mt-10'>
             <Link href='#' className='flex justify-center'>
               <div className='flex flex-row mtsc-img'>
                 <Image 
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
                 src="/Curso1.png" alt="imagen de curso de edicion" className='rounded-2xl'/>
               </div>
               <div className='flex flex-col mtsc-text justify-center pl-5'>
-                <h1 className='text-2xl font-text py-1'>Mastering anime editing</h1>
-                <p className='text-base font-subtext py-1'>Create editing anime video </p>
+                <h1 className='text-2xl font-text py-1 tmstm-1'>Mastering anime editing</h1>
+                <p className='text-base font-subtext py-1 pmstm-1'>Create editing anime video </p>
               </div>
               </Link>
           </div>
           <div className='cdy-content flex flex-col bg-white rounded-2xl dyn-content ml-10 mt-10'>
-            <Link href="" className='flex justify-center'>
+            <Link href="#" className='flex justify-center'>
               <div className='flex flex-row dyc-img'>
-                <Image 
-                  width={100}
-                  height={100}
+                <Image
+                    width={300}
+                    height={300}
                 src="/Curso1.png" alt="imagen de curso de edicion" className='rounded-2xl'/>
               </div>
               <div className='flex flex-col dyc-text justify-center pl-5'>
-                <h1 className='text-2xl font-text py-1'>Creating Dynamic trasitions</h1>
-                <p className='text-base font-subtext py-1'>Discover the secrets to smooth trasitions in anime style</p>
+                <h1 className='text-2xl font-text py-1 tmstm-2'>Creating Dynamic trasitions</h1>
+                <p className='text-base font-subtext py-1 pmstm-2'>Discover the secrets to smooth trasitions in anime style</p>
               </div>
             </Link>
           </div> 
         </section>
       </section>
       <section className='relative w-full pt-40 pb-40 px-36 inset-x-0 m-auto sectioncor-3'>
-        <div className='flex py-16 justify-center'>
+        <div className='flex py-16 justify-center sctioncor-3'>
             <div className='st-content flex flex-col justify-center'>
               <motion.div>
             <h1 className='text-[4rem] text-white font-text titlecos-3'>
@@ -129,44 +133,46 @@ return (
             Explore our recent content.
             </h2>
               </motion.div>
-              <motion.div className='mt-16'>
-                <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-                Watch Now
-                </Link>
+              <motion.div className='mt-16 button-wacth1'>
+                
+                   <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+                   Watch Now
+                   </Link>
+            
               </motion.div>
             </div>
-            <motion.div className='sv-content flex flex-row'>
+            <motion.div className='sv-content2 flex flex-row'>
           <video autoPlay loop playsInline muted className='rounded-[2rem]'>
             <source src='up1.mp4' type='video/mp4'/>
           </video>
             </motion.div>
         </div>
-        <section className='flex pt-5' >
+        <section className='flex pt-5 secmen-2 relative' >
           <div className='ms-content flex flex-col bg-white rounded-2xl mts-content mr-10 mt-10'>
             <Link href='#' className='flex justify-center'>
               <div className='flex flex-row mtsc-img'>
                 <Image 
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
                 src="/Curso1.png" alt="imagen de curso de edicion" className='rounded-2xl'/>
               </div>
               <div className='flex flex-col mtsc-text justify-center pl-5'>
-                <h1 className='text-2xl font-text py-1'>Mastering anime editing</h1>
-                <p className='text-base font-subtext py-1'>Create editing anime video </p>
+                <h1 className='text-2xl font-text py-1 tmstm-1'>Mastering anime editing</h1>
+                <p className='text-base font-subtext py-1 pmstm-1'>Create editing anime video </p>
               </div>
               </Link>
           </div>
           <div className='cdy-content flex flex-col bg-white rounded-2xl dyn-content ml-10 mt-10'>
-            <Link href="" className='flex justify-center'>
+            <Link href="#" className='flex justify-center'>
               <div className='flex flex-row dyc-img'>
                 <Image 
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
                 src="/Curso1.png" alt="imagen de curso de edicion" className='rounded-2xl'/>
               </div>
               <div className='flex flex-col dyc-text justify-center pl-5'>
-                <h1 className='text-2xl font-text py-1'>Creating Dynamic trasitions</h1>
-                <p className='text-base font-subtext py-1'>Discover the secrets to smooth trasitions in anime style</p>
+                <h1 className='text-2xl font-text py-1 tmstm-2'>Creating Dynamic trasitions</h1>
+                <p className='text-base font-subtext py-1 pmstm-2'>Discover the secrets to smooth trasitions in anime style</p>
               </div>
             </Link>
           </div> 

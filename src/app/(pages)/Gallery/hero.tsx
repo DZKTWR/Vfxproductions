@@ -32,8 +32,8 @@ const hero = () => {
             </div>
             <div className='flex flex-row scir-content'>
                 <Image 
-                  width={100}
-                  height={100}
+                  width={800}
+                  height={800}
                 src="/photomontage.jpg" alt="imagen de un potomontaje de una esfera de nieve" className='rounded-[2rem]' />
             </div>
         </section>

@@ -85,16 +85,19 @@ const Navbar = () => {
 
   return (
     <header>
-       <button className='menu-open cursor-pointer menu-icon2 fixed top-[20px] left-auto right-4 z-[61] border border-white p-3 rounded-full' onClick={toggleMenu} aria-label='Toggle menu'>
+       <button className='menu-open cursor-pointer menu-icon2 fixed top-[20px] left-auto right-4 z-[61] border border-white p-2 rounded-full' onClick={toggleMenu} aria-label='Toggle menu'>
             <Image width={27} height={27} src="/icon-menu.svg" alt='image of menu'/>
        </button> 
+       <div className=' flex flex-grow basis-0 icon-vfx z-50'>
+          <Link href="/" className='text-[2rem] text-white vfx-font'>VFX Productions</Link>
+        </div>
       <div
       id="header"
       className='py-5 px-24 flex items-center fixed top-0 z-[60]
       justify-between inset-x-0 bg-[#454545]/40
       backdrop-blur-xl  navbar2-responsive' 
       >
-        <div className=' flex flex-grow basis-0'>
+        <div className=' flex flex-grow basis-0 '>
           <Link href="/" className='text-2xl text-white vfx-font'>VFX Productions</Link>
         </div>
         <nav className='flex flex-grow justify-evenly'>

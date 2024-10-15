@@ -78,7 +78,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <button className='menu-open cursor-pointer menu-icon absolute top-[20px] left-auto right-4 z-[61] border border-white p-3 rounded-full' onClick={toggleMenu} aria-label='Toggle menu'>
+      <button className='menu-open cursor-pointer menu-icon absolute top-[20px] left-auto right-4 z-[61] border border-white p-2 rounded-full' onClick={toggleMenu} aria-label='Toggle menu'>
             <Image width={25} height={25} src="/icon-menu.svg" alt='image of menu'/>
        </button> 
       <div
