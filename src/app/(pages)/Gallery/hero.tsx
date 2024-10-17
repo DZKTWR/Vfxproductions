@@ -12,10 +12,10 @@ const hero = () => {
             <div className='flex flex-col sctr-content justify-center'>
                 <div className='flex pb-9'>
                     <h1 className='text-[4.5rem] text-white font-text titlegll-1'>
-                        <span className='block text-start'>
+                        <span className='block text-start txtspan-1'>
                             GALLERY
                         </span>
-                        <span className='block text-start'>
+                        <span className='block text-start txtspan-2'>
                             AND VIDEOS
                         </span>
                     </h1>
