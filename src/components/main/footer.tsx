@@ -75,7 +75,7 @@ const Footer = () => {
                         <span className="text-[15px] ml-[6px] block"> Donate here!❤️</span> 
                         <span className="text-[15px] ml-[6px] block"> ↓ </span>  
                     </div>
-                     <Link href="#"className="flex flex-row items-center my-[15px] cursor-pointer">
+                     <Link href="https://paypal.me/diegoacosta332?country.x=CO&locale.x=es_XC"className="flex flex-row items-center my-[15px] cursor-pointer">
                          <span className="text-[15px] ml-[6px]">Paypal</span>    
                      </Link>
                       
