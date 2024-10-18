@@ -74,7 +74,7 @@ const Hero = () => {
                 </div>
                 <div className='z-[2] absolute top-0 h-full w-full bottom-0 opacity-15'>
                             <video ref={videoRef} muted={isMuted} autoPlay loop className='object-center object-cover h-full w-full'>
-                                <source src='animation1.mp4' type='video/mp4'/>
+                                <source src='Final.mp4' type='video/mp4'/>
                             </video>
                     </div>
                 <div className='absolute flex flex-row top-auto bottom-[4rem] left-[4.5rem] right-auto z-[20] justify-evenly items-center iconsw-responsive'>
