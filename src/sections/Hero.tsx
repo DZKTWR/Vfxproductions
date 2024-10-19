@@ -6,6 +6,7 @@ import { FlipWords } from "@/ui/flip-words";
 import Link from "next/link";
 import Image from 'next/image';
 import Magnetic from "@/components/magnetic";
+import { useLanguage } from '@/components/context/LanguageContext';
 
 export function FlipWordsDemo() {
     const words = ['Animation','Editing','3D blender']; {
@@ -16,6 +17,10 @@ export function FlipWordsDemo() {
 
 
 const Hero = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const { language, setLanguage, t } = useLanguage()
+
+
     const videoRef = useRef<HTMLVideoElement | null>(null);
     const soundwaveRef = useRef<HTMLVideoElement | null>(null);
     const [isMuted, setIsMuted] = useState(true);
@@ -89,11 +94,31 @@ const Hero = () => {
                             )}
                         </button>
                     </Magnetic>
-                   <Magnetic>
-                       <button className='ml-2'>
+                       <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className='ml-2'>
                             <Image height={30} width={27} src='/global.png' alt='image-global' className='globalcolor'/>
+                            {isOpen && (
+                            <div className="absolute flex top-full left-0 right-auto mt-2 shadow-md rounded-md z-[50]">
+                              {['en', 'es'].map((lang) => (
+                                <button
+                                  key={lang}
+                                  onClick={() => {
+                                    setLanguage(lang as 'en' | 'es')
+                                    setIsOpen(false)
+                                  }}
+                                  className="justify-center w-full text-left px-4 py-2 text-white relative"
+                                >
+                                  {t(lang === 'en' ? 'En' : 'Es')}
+                                  {language === lang && (
+                                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-slate-100 animate-pulse z-[50]"  />
+                                  )}
+                                </button>
+                              ))}
+                            </div>
+                        )}
                         </button>
-                   </Magnetic>
+
                 </div>
             </section>
             

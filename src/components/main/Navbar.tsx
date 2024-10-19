@@ -6,9 +6,11 @@ import  { useEffect, useRef , useState } from 'react';
 import Image from "next/image";
 import Menu from "./menu";
 import Magnetic from "@/components/magnetic";
+import { useLanguage } from '@/components/context/LanguageContext';
 
 
 const Navbar = () => {
+  const { t } = useLanguage()
 
   //animation type hover
   const listItemRef = useRef<HTMLUListElement | null>(null);
@@ -91,10 +93,10 @@ const Navbar = () => {
                 <ul ref={listItemRef}
                 className='flex text-[#dbe3e9] text-base [&>li>a]:font-[500] [&>li>a]:inline-block 
                 [&>li>a]:px-5 [&>li>a]:py-2 [&>li>a]:roboto-font'>
-                    <li><Link href="/Courses" >Courses</Link></li>
-                    <li><Link href="/Gallery" >Gallery</Link></li>
-                    <li><Link href="/Recourses">Recourses</Link></li>
-                    <li><Link href="/About">About</Link></li>
+                    <li><Link href="/Courses" >{t('Coureses')}</Link></li>
+                    <li><Link href="/Gallery" >{t('Gallery')}</Link></li>
+                    <li><Link href="/Recourses">{t('Recoureses')}</Link></li>
+                    <li><Link href="/About">{t('About us')}</Link></li>
                </ul>
         </nav>
         <Magnetic>

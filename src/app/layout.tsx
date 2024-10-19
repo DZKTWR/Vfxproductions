@@ -4,6 +4,7 @@ import "../../public/fonts/clashdisplay-font/css/clash-display.css";
 import '@fontsource/roboto';
 import "./globals.css";
 import Footer from "@/components/main/footer";
+import { LanguageProvider } from '@/components/context/LanguageContext';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,8 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={'${inter.className} bg-[#121315] overflow-y-scroll overflow-x-hidden'}
       >
-          {children}
-          <Footer />
+        <LanguageProvider>
+             {children}
+             <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
