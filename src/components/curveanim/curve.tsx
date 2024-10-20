@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-import { text, curve, translate } from './anim'
+import { text, curve, translate } from './anim';
+
 
 interface Routes {
   [key: string]: string;

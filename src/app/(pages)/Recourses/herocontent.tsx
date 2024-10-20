@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from "framer-motion";
-
+import { useLanguage } from '@/components/context/LanguageContext';
   // Header app  
   // Variantes del contenedor padre (controla el stagger)
   const container2Variants = {
@@ -21,6 +21,7 @@ import { motion } from "framer-motion";
   
 
 const herocontent = () => {
+  const { t } = useLanguage()
   return (
     <>
       <section className='pt-20 pb-40 justify-center m-auto'>
@@ -51,7 +52,7 @@ const herocontent = () => {
             <section className='flex flex-col pb-20'>
                 <motion.div className='pb-12'>
                     <h1 className='text-[3.2rem] text-white font-text'>
-                        MOST POPULAR 
+                       {t('MOST POPULAR')}  
                     </h1>
                 </motion.div>
                 <div className='flex flex-row gap-6'>
@@ -72,7 +73,7 @@ const herocontent = () => {
             <section className='flex flex-col py-24'>
                 <motion.div className='pb-12'>
                     <h1 className='text-[3.2rem] text-white font-text'>
-                        RECENTLY ADDED
+                        {t('RECENTLY ADDED')} 
                     </h1>
                 </motion.div>
                 <div className='flex flex-row gap-6'>
@@ -93,7 +94,7 @@ const herocontent = () => {
             <section className='flex flex-col py-24'>
                 <motion.div className='pb-12'>
                     <h1 className='text-[3.2rem] text-white font-text'>
-                        ACTIVE PACKS
+                        {t('ACTIVE PACKS')} 
                     </h1>
                 </motion.div>
                 <div className='flex flex-row gap-6'>

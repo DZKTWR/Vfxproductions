@@ -17,6 +17,7 @@ export function FlipWordsDemo() {
 
 
 const Hero = () => {
+    
     const [isOpen, setIsOpen] = useState(false)
     const { language, setLanguage, t } = useLanguage()
 
@@ -58,7 +59,7 @@ const Hero = () => {
                                     VFX Productions
                             </h1>
                             <h2 className='relative -top-2 text-[1.2rem] sm:text-[1.7rem] sm:pb-4 text-[#e0e8ee] py-1 roboto-font slc'>
-                                A way to learn <FlipWordsDemo />
+                               {t( 'A way to learn' )}  <FlipWordsDemo />
                             </h2>
                         </motion.div>
                     </header>
@@ -71,7 +72,7 @@ const Hero = () => {
                             <Magnetic>
                                  <Link href="/Courses" className='border-2 border-[#ffffff] rounded-full text-lg inline-block font-medium px-6 py-2
                                  text-[#e0e8ee] roboto-font bttn-learn '>
-                                     Learn More!
+                                    {t('Learn More!')} 
                                  </Link>
                             </Magnetic>
                         </motion.div>

@@ -24,6 +24,7 @@
 .font-text{
     font-family: 'ClashDisplay-Variable';
     font-weight: 600;
+    word-spacing: 0.5rem;
     transform: scale(1, 1.15);
     line-height: 1;
 }

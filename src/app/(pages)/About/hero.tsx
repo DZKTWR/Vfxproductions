@@ -1,22 +1,24 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
+import { useLanguage } from '@/components/context/LanguageContext';
+
 
 
 const hero = () => {
+  const { t } = useLanguage()
   return (
     <main className='relative w-full pt-48 pb-40 px-28 flex flex-col justify-center inset-x-0 m-auto main-about' >
         <section className='flex pt-20 pb-20 gap-20 items-center sectionabt-1'>
         <div className='flex flex-col py-4 px-12 shct-content border-2 border-[#ffffffa5] rounded-2xl bg-slate-200  '>
             <div className='pt-12'>
                <h1 className='text-[3.5rem] text-[#121315] font-text titleabt-1'>
-                <span className='block'>ABOUT</span>
-                <span className='block '>VFX &nbsp; PRODUCTIONS</span>
+                <span className='block'>{t('ABOUT OF')}</span>
+                <span className='block '>VFX PRODUCTIONS</span>
                 </h1> 
             </div>
             <div className='flex flex-row py-12 cont-abt-1'>
-                <p className='font-subtext text-[1.2rem] text-[#121315] textabt-1'>vfx productions was created specifically to help people who
-                   do not have advanced knowledge or training in the field of 
-                   video editing or creating visual effects</p>
+                <p className='font-subtext text-[1.2rem] text-[#121315] textabt-1'>{t("Vfx productions was created specifically to help people who do not have advanced knowledge or training in the field of video editing or creating visual effects")}</p>
             </div>
         </div>
         <div className='shci-contnet'>
@@ -31,14 +33,13 @@ const hero = () => {
         <div className='shct-content1 py-4 px-12 shct-content border-2 border-[#ffffffa5] rounded-2xl bg-slate-200 '>
             <div className='pt-12'>
                <h1 className='text-[3.5rem] text-[#121315] font-text titleabt-2'>
-                <span className='block'>ABOUT</span>
+                <span className='block'>{t("ABOUT OF")}</span>
                 <span className='block'>DAZKON</span>
                 </h1> 
             </div>
             <div className='py-12 contabt-2'>
-                <p className='font-subtext text-[1.2rem] text-[#121315] textabt-2'>vfx productions was created specifically to help people who
-                   do not have advanced knowledge or training in the field of 
-                   video editing or creating visual effects</p>
+                <p className='font-subtext text-[1.2rem] text-[#121315] textabt-2'>{t("Dazkon is the creator of the VFX Productions project. Dazkon is a nickname that is used; his real name is Diego Acosta, a student passionate about the world of anime, drawing, computer science, and video editing.")}
+                  </p>
             </div>
         </div>
         <div className='shci-content2'>

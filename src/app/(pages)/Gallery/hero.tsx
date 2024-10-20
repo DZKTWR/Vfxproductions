@@ -4,8 +4,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from "next/link";
+import { useLanguage } from '@/components/context/LanguageContext';
+
+
 
 const hero = () => {
+    const { t } = useLanguage()
   return (
     <div>
         <section className='relative w-full h-screen flex pt-48 pb-16 px-36 justify-center items-center inset-x-0 m-auto sctin-glly-1'>
@@ -13,20 +17,23 @@ const hero = () => {
                 <div className='flex pb-9'>
                     <h1 className='text-[4.5rem] text-white font-text titlegll-1'>
                         <span className='block text-start txtspan-1'>
-                            GALLERY
+                           {t('GALLERY')} 
                         </span>
                         <span className='block text-start txtspan-2'>
-                            AND VIDEOS
+                           {t('AND VIDEOS')} 
                         </span>
                     </h1>
                 </div>
                 <div className='pr-[7rem] cont-txt-gall-1'>
-                <p className='text-[1.2rem] text-white txtgll-1'>Explore our extensive collection of videos focused on video editing,visual effects, and animation. 
-                    This section features a diverse range of content showcasing advanced editing techniques and special effects.
+                <p className='text-[1.2rem] text-white txtgll-1'>
+                    {t('Explore our extensive collection of videos focused on video editing,visual effects, and animation.')}
+
+                    {t('This section features a diverse range of content showcasing advanced editing techniques and special effects.')}
+                    
                 </p>
                 <p className='text-[1.2rem] text-white pt-6 txtgll-2'>
-                    Additionally, you'll find an art gallery presenting impressive videos 
-                    with effects and anime edits from our two prominent accounts: VFX Productions and Dazkon.
+                    {t("Additionally, you'll find an art gallery presenting impressive videos with effects and anime edits from our two prominent accounts: VFX Productions and Dazkon.")}
+
                 </p>
                 </div>
             </div>
@@ -41,17 +48,17 @@ const hero = () => {
         <div className='st-content flex flex-col justify-center'>
             <motion.div>
                 <h1 className='text-[4.5rem] text-white font-text titlegll-2'>
-                WATCH ALL THE VIDEOS HERE
+                {t("WATCH ALL THE VIDEOS HERE")}
                 </h1>
             </motion.div>
             <motion.div>
                 <h2 className='text-[1.2rem] text-white py-7 font-subtext pr-4 txtgll-3'>
-                Here you will find all the free videos on how to create special effects, how to make anime editions, also how to create animations.
+                {t("Here you will find all the free videos on how to create special effects, how to make anime editions, also how to create animations.")}
                 </h2>
             </motion.div>
             <motion.div className='mt-5'>
                 <Link href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-                Get it now
+                {t("Get it now")}
                 </Link>
             </motion.div>
         </div>
@@ -70,17 +77,18 @@ const hero = () => {
         <div className='st-content flex flex-col justify-center pl-16'>
             <motion.div>
                 <h1 className='text-[4.5rem] text-white font-text titlegll-3'>
-                   Art Gallery
+                    {t("Art Gallery")}
+
                 </h1>
             </motion.div>
             <motion.div>
                 <h2 className='text-[1.2rem] text-white py-6 font-subtext txtgll-4'>
-                   find all the art gallery of vfx productions and dazkon a mix of anime editions and special effects, with their social networks of each one.Unlook your creativity with our in-depth tutorials.
+                    {t("find all the art gallery of vfx productions and dazkon a mix of anime editions and special effects, with their social networks of each one.Unlook your creativity with our in-depth tutorials.")}
                 </h2>
             </motion.div>
             <motion.div className='mt-7'>
-                <Link href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-                Get it now
+                <Link href="/ArtGallery" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
+                {t("Get it now")}
                 </Link>
             </motion.div>
         </div>

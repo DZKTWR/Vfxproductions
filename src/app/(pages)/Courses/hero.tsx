@@ -4,6 +4,9 @@ import React from 'react';
 import Image from 'next/image';
 import  { motion }  from 'framer-motion';
 import Link from "next/link";
+import { useLanguage } from '@/components/context/LanguageContext';
+
+
 
 // Variantes del contenedor padre 
 const containerVariants = {
@@ -22,6 +25,7 @@ const itemsCotainerV = {
 
 
 const hero = () => {
+  const { t } = useLanguage()
 return (
     <div>
       <section className='relative w-screen h-screen pt-48 pb-40 px-36 flex justify-center inset-x-0 m-auto sectioncor-1'>  
@@ -32,21 +36,21 @@ return (
             variants={itemsCotainerV}
           >
             <h1 className='text-[4.5rem] text-white font-text titlecos-1 '>
-            LEARN THE  ART OF VIDEO EDITING
+            {t('LEARN THE  ART OF VIDEO EDITING')}
             </h1>
           </motion.div>
           <motion.div
           variants={itemsCotainerV}
           >
             <h2 className='text-[1.2rem] text-white mt-7 font-subtext subtext-cour-1'>
-            Unlook your creativity with our in-depth tutorials.
+            {t('Unlook your creativity with our in-depth tutorials.')}
             </h2>
           </motion.div>
           <motion.div
           variants={itemsCotainerV}
           >
             <p className='text-[1.1 rem] text-white mb-3 font-subtext subtext-cour-2'>
-            Total Free
+            {t('Total Free')}
             </p>
           </motion.div>
           <motion.div 
@@ -54,7 +58,7 @@ return (
           className='mt-7'>
 
               <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-              Get it now
+              {t('Get it now')} 
               </Link>
 
           </motion.div>
@@ -75,15 +79,15 @@ return (
             </div>
           <div className='st-content-themost flex flex-col justify-center'>
           <h1 className='text-[4.5rem] text-white font-text titlecos-2'>
-            THE MOST POPULAR TUTORIALS
+          {t('THE MOST POPULAR TUTORIALS')}  
           </h1>
           <h2 className='text-[1.3rem] text-white font-subtext mt-7 subtext-cour-3'>
-            Explore our top-rated video editing guides.
+          {t('Explore our top-rated video editing guides.')} 
           </h2>
           <div className='mt-16 bttn-wacth-1'>
         
                <Link href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext '>
-               Watch Now
+               {t('Watch Now')} 
                </Link>
 
           </div>
@@ -99,8 +103,8 @@ return (
                 src="/Curso1.png" alt="imagen de curso de edicion" className='rounded-2xl'/>
               </div>
               <div className='flex flex-col mtsc-text justify-center pl-5'>
-                <h1 className='text-2xl font-text py-1 tmstm-1'>Mastering anime editing</h1>
-                <p className='text-base font-subtext py-1 pmstm-1'>Create editing anime video </p>
+                <h1 className='text-2xl font-text py-1 tmstm-1'>{t('Mastering anime editing')}</h1>
+                <p className='text-base font-subtext py-1 pmstm-1'>{t('Create editing anime video')} </p>
               </div>
               </Link>
           </div>
@@ -113,8 +117,8 @@ return (
                 src="/Curso1.png" alt="imagen de curso de edicion" className='rounded-2xl'/>
               </div>
               <div className='flex flex-col dyc-text justify-center pl-5'>
-                <h1 className='text-2xl font-text py-1 tmstm-2'>Creating Dynamic trasitions</h1>
-                <p className='text-base font-subtext py-1 pmstm-2'>Discover the secrets to smooth trasitions in anime style</p>
+                <h1 className='text-2xl font-text py-1 tmstm-2'>{t('Creating Dynamic trasitions')}</h1>
+                <p className='text-base font-subtext py-1 pmstm-2'>{t('Discover the secrets to smooth trasitions in anime style')}</p>
               </div>
             </Link>
           </div> 
@@ -125,18 +129,18 @@ return (
             <div className='st-content flex flex-col justify-center'>
               <motion.div>
             <h1 className='text-[4rem] text-white font-text titlecos-3'>
-            RECENTLY ADDED
+            {t('RECENTLY ADDED')}
             </h1>
               </motion.div>
               <motion.div>
             <h2 className='text-[1.3rem] text-white mt-7 font-subtext subtext-cour-4'>
-            Explore our recent content.
+            {t('Explore our recent content.')} 
             </h2>
               </motion.div>
               <motion.div className='mt-16 button-wacth1'>
                 
                    <Link href="" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-                   Watch Now
+                   {t('Watch Now')} 
                    </Link>
             
               </motion.div>
@@ -157,8 +161,8 @@ return (
                 src="/Curso1.png" alt="imagen de curso de edicion" className='rounded-2xl'/>
               </div>
               <div className='flex flex-col mtsc-text justify-center pl-5'>
-                <h1 className='text-2xl font-text py-1 tmstm-1'>Mastering anime editing</h1>
-                <p className='text-base font-subtext py-1 pmstm-1'>Create editing anime video </p>
+                <h1 className='text-2xl font-text py-1 tmstm-1'>{t('Mastering anime editing')}</h1>
+                <p className='text-base font-subtext py-1 pmstm-1'>{t('Create editing anime video')} </p>
               </div>
               </Link>
           </div>
@@ -171,8 +175,8 @@ return (
                 src="/Curso1.png" alt="imagen de curso de edicion" className='rounded-2xl'/>
               </div>
               <div className='flex flex-col dyc-text justify-center pl-5'>
-                <h1 className='text-2xl font-text py-1 tmstm-2'>Creating Dynamic trasitions</h1>
-                <p className='text-base font-subtext py-1 pmstm-2'>Discover the secrets to smooth trasitions in anime style</p>
+                <h1 className='text-2xl font-text py-1 tmstm-2'>{t('Creating Dynamic trasitions')}</h1>
+                <p className='text-base font-subtext py-1 pmstm-2'>{t('Discover the secrets to smooth trasitions in anime style')}</p>
               </div>
             </Link>
           </div> 

@@ -6,10 +6,11 @@ import  { useEffect, useRef , useState } from 'react';
 import Image from "next/image";
 import Menu from "./menu";
 import Magnetic from "@/components/magnetic";
-
+import { useLanguage } from '@/components/context/LanguageContext';
 
 
 const Navbar = () => {
+  const { t } = useLanguage()
 
   //animation type hover
   const listItemRef = useRef<HTMLUListElement | null>(null);
@@ -104,10 +105,10 @@ const Navbar = () => {
                 <ul ref={listItemRef}
                 className='flex text-[#e0e8ee] text-base [&>li>a]:font-[500] 
                 [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:roboto-font'>
-                    <li><Link href="/Courses">Courses</Link></li>
-                    <li><Link href="/Gallery">Gallery</Link></li>
-                    <li><Link href="/Recourses">Recourses</Link></li>
-                    <li><Link href="/About">About</Link></li>
+                    <li><Link href="/Courses">{t('Courses')}</Link></li>
+                    <li><Link href="/Gallery">{t('Gallery')}</Link></li>
+                    <li><Link href="/Recourses">{t('Recourses')}</Link></li>
+                    <li><Link href="/About">{t('About')}</Link></li>
                 </ul>
         </nav>
         <div
@@ -122,12 +123,12 @@ const Navbar = () => {
         <div className='flex flex-grow justify-end basis-0 gap-7'>
           <Magnetic>
           <button className='text-base text-white border border-white py-2 px-9 rounded-full'>
-            Login
+           {t('Login')}
           </button>
           </Magnetic>
           <Magnetic>
           <button className='text-base text-white border border-white py-2 px-8 rounded-full'>
-            SingUp
+            {t('Sign Up')}
           </button>
           </Magnetic>
         </div>

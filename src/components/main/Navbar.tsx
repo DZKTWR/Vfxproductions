@@ -6,11 +6,8 @@ import  { useEffect, useRef , useState } from 'react';
 import Image from "next/image";
 import Menu from "./menu";
 import Magnetic from "@/components/magnetic";
-import { useLanguage } from '@/components/context/LanguageContext';
-
 
 const Navbar = () => {
-  const { t } = useLanguage()
 
   //animation type hover
   const listItemRef = useRef<HTMLUListElement | null>(null);
@@ -85,7 +82,7 @@ const Navbar = () => {
        </button> 
       <div
       id="header"
-      className='base-navbar py-2 px-9 flex items-center fixed top-[20px] max-w-[35rem] mx-auto z-[60]
+      className='base-navbar py-2 px-9 flex items-center fixed top-[20px] max-w-[38rem] mx-auto z-[60]
       justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/40 backdrop-blur-xl rounded-full' 
       >  
         <nav 
@@ -93,14 +90,14 @@ const Navbar = () => {
                 <ul ref={listItemRef}
                 className='flex text-[#dbe3e9] text-base [&>li>a]:font-[500] [&>li>a]:inline-block 
                 [&>li>a]:px-5 [&>li>a]:py-2 [&>li>a]:roboto-font'>
-                    <li><Link href="/Courses" >{t('Coureses')}</Link></li>
-                    <li><Link href="/Gallery" >{t('Gallery')}</Link></li>
-                    <li><Link href="/Recourses">{t('Recoureses')}</Link></li>
-                    <li><Link href="/About">{t('About us')}</Link></li>
+                    <li><Link href="/Courses" >Coureses</Link></li>
+                    <li><Link href="/Gallery" >Gallery</Link></li>
+                    <li><Link href="/Recourses">Recoureses</Link></li>
+                    <li><Link href="/About">About</Link></li>
                </ul>
         </nav>
         <Magnetic>
-          <button className='border border-white rounded-3xl py-2 px-6 text-white button-login hover:bg-white/5 backdrop-blur-lg'>Login</button>
+          <button className='border border-white rounded-3xl py-2 px-5 text-white button-login hover:bg-white/5 backdrop-blur-lg'>Login</button>
         </Magnetic>
 
         <div
@@ -108,7 +105,7 @@ const Navbar = () => {
           ref={menuBackDropRef}
           className="absolute bg-white/5 backdrop-blur-lg rounded 
           translate-x-[var(--left)] translate-y-[var(--top)]
-          left-[2.5rem]
+          left-[3.8rem]
           w-[var(--width)] h-[var(--height)]
           transition-all duration-500 ease-in-out
           opacity-0 -z-10"
