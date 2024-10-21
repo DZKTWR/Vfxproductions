@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Herocontent from './herocontent';
+import Herocontent from './Herocontent';
 import { useLanguage } from '@/components/context/LanguageContext';
 
 // Variantes del contenedor padre 
