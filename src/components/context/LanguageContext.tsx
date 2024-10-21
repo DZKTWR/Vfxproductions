@@ -1,5 +1,7 @@
+"use client ";
+
 import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react'
-import NavbarEn from '@/components/NavbarEn'
+import NavbarEn from '@/components/Navbar'
 import NavbarEs from '@/components/NavbarEs'
 
 type Language = 'en' | 'es'
