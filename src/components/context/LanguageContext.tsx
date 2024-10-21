@@ -1,18 +1,19 @@
-'use client'
+import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react'
+import NavbarEn from '@/components/NavbarEn'
+import NavbarEs from '@/components/NavbarEs'
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
+type Language = 'en' | 'es'
 
-type LanguageContextType = {
-  language: 'en' | 'es'
-  setLanguage: (lang: 'en' | 'es') => void
+interface Translations {
+  [key: string]: string
+}
+
+interface LanguageContextType {
+  language: Language
+  setLanguage: React.Dispatch<React.SetStateAction<Language>>
   t: (text: string) => string
   NavbarComponent: React.ComponentType
 }
-const NavbarEn = dynamic(() => import('@/components/main/Navbar'), { ssr: false })
-const NavbarEs = dynamic(() => import('@/components/Navbar-es'), { ssr: false })
-
-
 
 const translations: { [key: string]: string } = {
     'Coureses': 'Cursos',
@@ -80,12 +81,16 @@ const translations: { [key: string]: string } = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<'en' | 'es'>('en')
+interface LanguageProviderProps {
+  children: ReactNode
+}
+
+export function LanguageProvider({ children }: LanguageProviderProps) {
+  const [language, setLanguage] = useState<Language>('en')
   const [NavbarComponent, setNavbarComponent] = useState<React.ComponentType>(() => NavbarEn)
 
   useEffect(() => {
-    const storedLanguage = localStorage.getItem('language') as 'en' | 'es'
+    const storedLanguage = localStorage.getItem('language') as Language | null
     if (storedLanguage) {
       setLanguage(storedLanguage)
     } else {
@@ -96,7 +101,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     localStorage.setItem('language', language)
-    // Cambia el componente Navbar basado en el idioma
     setNavbarComponent(() => language === 'en' ? NavbarEn : NavbarEs)
   }, [language])
 
@@ -105,8 +109,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     return translations[text] || text
   }
 
+  const contextValue: LanguageContextType = {
+    language,
+    setLanguage,
+    t,
+    NavbarComponent
+  }
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, NavbarComponent }}>
+    <LanguageContext.Provider value={contextValue}>
       {children}
     </LanguageContext.Provider>
   )
