@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import ReactPlayer from 'react-player';
 import videos from "./video";
+import dynamic from 'next/dynamic'
 
 interface Video {
   id: string;
