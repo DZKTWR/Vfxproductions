@@ -83,7 +83,7 @@ const Navbares = () => {
       <div
       id="header"
       className='base-navbar py-2 px-9 flex items-center fixed top-[20px] max-w-[38rem] mx-auto z-[60]
-      justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/40 backdrop-blur-xl rounded-full' 
+      justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/10 backdrop-blur-xl rounded-full' 
       >  
         <nav 
         className='flex flex-grow justify-evenly navbar'>
