@@ -2,7 +2,7 @@
 
 import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react'
 import NavbarEn from '@/components/Navbar'
-import NavbarEs from '@/components/NavbarEs'
+import NavbarEs from '@/components/Navbar-es'
 
 type Language = 'en' | 'es'
 
