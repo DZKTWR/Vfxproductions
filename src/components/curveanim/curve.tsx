@@ -15,6 +15,7 @@ const routes: Routes = {
   "/Courses": "Courses",
   "/Gallery": "Gallery",
   "/Recourses": "Recourses",
+  "/ArtGallery": "ArtGallery",
 }
 
 interface AnimProps {

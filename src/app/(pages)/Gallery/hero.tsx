@@ -58,7 +58,7 @@ const hero = () => {
             </motion.div>
             <motion.div className='mt-5'>
                 <Link href="#" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-                {t("Get it now")}
+                {t("Watch it now")}
                 </Link>
             </motion.div>
         </div>
@@ -88,7 +88,7 @@ const hero = () => {
             </motion.div>
             <motion.div className='mt-7'>
                 <Link href="/ArtGallery" className='mt-4 border-2 border-white px-14 pt-3 pb-3 rounded-3xl text-center text-white text-[1.1rem] font-subtext'>
-                {t("Get it now")}
+                {t("Watch it now")}
                 </Link>
             </motion.div>
         </div>

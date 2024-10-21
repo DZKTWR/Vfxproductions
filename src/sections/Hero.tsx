@@ -19,7 +19,7 @@ export function FlipWordsDemo() {
 const Hero = () => {
     
     const [isOpen, setIsOpen] = useState(false)
-    const { language, setLanguage, t } = useLanguage()
+    const { language, setLanguage, t , NavbarComponent } = useLanguage()
 
 
     const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -47,6 +47,8 @@ const Hero = () => {
     };
 
     return (
+        <>
+             <NavbarComponent />
             <section className=' text-center relative h-screen w-screen'>
                 <div className='relative tr-hero-content z-[15] h-full m-auto inset-x-0 justify-center flex flex-col items-center overflow-hidden'>
                    <header style={{ transform: 'translate(0px, 0px)'}} >
@@ -122,6 +124,8 @@ const Hero = () => {
 
                 </div>
             </section>
+        
+        </>
             
     );
 };

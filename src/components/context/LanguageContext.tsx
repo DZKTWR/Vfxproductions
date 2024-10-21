@@ -1,12 +1,18 @@
 'use client'
 
-import React, { createContext, useContext, useState, useEffect } from 'react'
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 
 type LanguageContextType = {
   language: 'en' | 'es'
   setLanguage: (lang: 'en' | 'es') => void
   t: (text: string) => string
+  NavbarComponent: React.ComponentType
 }
+const NavbarEn = dynamic(() => import('@/components/main/Navbar'), { ssr: false })
+const NavbarEs = dynamic(() => import('@/components/Navbar-es'), { ssr: false })
+
+
 
 const translations: { [key: string]: string } = {
     'Coureses': 'Cursos',
@@ -47,6 +53,10 @@ const translations: { [key: string]: string } = {
     "Here you will find all the free videos on how to create special effects, how to make anime editions, also how to create animations.":'Aquí encontrarás todos los videos gratuitos sobre cómo crear efectos especiales, cómo hacer ediciones de anime y también cómo crear animaciones.',
     "Art Gallery":"Galería de Arte",
     "find all the art gallery of vfx productions and dazkon a mix of anime editions and special effects, with their social networks of each one.Unlook your creativity with our in-depth tutorials.":'Encuentra toda la galería de arte de VFX Productions y Dazkon, una mezcla de ediciones de anime y efectos especiales, junto con sus redes sociales de cada uno. Desbloquea tu creatividad con nuestros tutoriales detallados.',
+    "Watch it now":"Miralo ahora",
+
+
+
 
     /*About*/
     'ABOUT OF':'ACERCA DE',
@@ -72,6 +82,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<'en' | 'es'>('en')
+  const [NavbarComponent, setNavbarComponent] = useState<React.ComponentType>(() => NavbarEn)
 
   useEffect(() => {
     const storedLanguage = localStorage.getItem('language') as 'en' | 'es'
@@ -85,6 +96,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     localStorage.setItem('language', language)
+    // Cambia el componente Navbar basado en el idioma
+    setNavbarComponent(() => language === 'en' ? NavbarEn : NavbarEs)
   }, [language])
 
   const t = (text: string): string => {
@@ -93,7 +106,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, NavbarComponent }}>
       {children}
     </LanguageContext.Provider>
   )

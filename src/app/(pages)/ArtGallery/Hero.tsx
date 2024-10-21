@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
                   {item.video && (
                     <ReactPlayer
                       url={item.video.videoId}
-                      controls={true}
+                      controls={false}
                       autoPlay={true}
                       loop={true}
                       playing
