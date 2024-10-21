@@ -2,7 +2,7 @@
 
 import React from 'react'
 import  { motion }  from 'framer-motion';
-import Hero from './hero'; 
+import Hero from './Hero'; 
 import Herocontent from './Herocontent';
 
 
