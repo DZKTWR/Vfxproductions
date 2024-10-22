@@ -17,7 +17,6 @@ interface Item {
   video: Video | undefined;
 }
 
-
 const Hero: React.FC = () => {
   const galleryRef = useRef<HTMLDivElement>(null);
   const [items, setItems] = useState<Item[][]>([]);
@@ -29,14 +28,11 @@ const Hero: React.FC = () => {
     const handleResize = () => {
       setIsEffectActive(window.innerWidth > 1000);
     };
-  
+
     handleResize();
-  
     window.addEventListener('resize', handleResize);
-  
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!isEffectActive || !galleryRef.current) return;
@@ -50,17 +46,19 @@ const Hero: React.FC = () => {
     const deltaX = (centerX - clientX) * sensitivity;
     const deltaY = (centerY - clientY) * sensitivity;
 
-    if (galleryRef.current) {
-      galleryRef.current.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px))`;
-    }
+    galleryRef.current.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px))`;
   };
 
   const handleVideoHover = (videoId: string) => {
-    setHoveredVideo(videoId);
+    if (isEffectActive) {
+      setHoveredVideo(videoId);
+    }
   };
 
   const handleVideoLeave = () => {
-    setHoveredVideo(null);
+    if (isEffectActive) {
+      setHoveredVideo(null);
+    }
   };
 
   const handleVideoClick = (videoId: string) => {
@@ -97,28 +95,28 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className='container' onMouseMove={handleMouseMove}>
-      <div className='gallery' ref={galleryRef}>
+    <div className={`container ${isEffectActive ? '' : 'mobile-view'}`} onMouseMove={isEffectActive ? handleMouseMove : undefined}>
+      <div className={`gallery ${isEffectActive ? '' : 'mobile-gallery'}`} ref={galleryRef}>
         {items.map((row, rowIndex) => (
-          <div key={`row-${rowIndex}`} className='row'>
+          <div key={`row-${rowIndex}`} className={`row ${isEffectActive ? '' : 'mobile-row'}`}>
             {row.map((item) => (
-              <div 
-                key={item.id} 
-                className='item' 
-                onClick={() => item.video && handleVideoClick(item.video.videoId)}
-                onMouseEnter={() => item.video && handleVideoHover(item.video.videoId)}
-                onMouseLeave={handleVideoLeave}
-              >
-                <div className='preview-img'>
-                  <img src={item.video?.previewImg} alt={item.video?.videoName} />
-                </div>
-                <p id='videoName'>{item.video?.videoName}</p>
+              item.video && (isEffectActive || item.video.previewImg) ? (
+                <div 
+                  key={item.id} 
+                  className={`item ${isEffectActive ? '' : 'mobile-item'}`}
+                  onClick={() => item.video && handleVideoClick(item.video.videoId)}
+                  onMouseEnter={() => item.video && handleVideoHover(item.video.videoId)}
+                  onMouseLeave={handleVideoLeave}
+                >
+                  <div className='preview-img'>
+                    <img src={item.video.previewImg} alt={item.video.videoName} />
+                  </div>
+                  <p id='videoName'>{item.video.videoName}</p>
 
-                <div className='video-wrapper'>
-                  {item.video && (
+                  <div className='video-wrapper'>
                     <ReactPlayer
                       url={item.video.videoId}
-                      playing={hoveredVideo === item.video.videoId}
+                      playing={isEffectActive && hoveredVideo === item.video.videoId}
                       loop={true}
                       muted={true}
                       width="100%"
@@ -131,9 +129,9 @@ const Hero: React.FC = () => {
                         }
                       }}
                     />
-                  )}
+                  </div>
                 </div>
-              </div>
+              ) : null
             ))}
           </div>
         ))}
