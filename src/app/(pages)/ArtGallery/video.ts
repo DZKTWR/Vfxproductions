@@ -14,7 +14,7 @@ interface Video {
     },
     {
       id: "1-2",
-      videoId: 'https://www.youtube.com/embed/fX_nQwgKRjk,
+      videoId: 'https://www.youtube.com/embed/fX_nQwgKRjk',
       videoName: "Chisato | Edit - DAZKON ",
       previewImg: '/Gallery/chisato.png',
     },

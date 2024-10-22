@@ -17,14 +17,29 @@ interface Item {
   video: Video | undefined;
 }
 
+
 const Hero: React.FC = () => {
   const galleryRef = useRef<HTMLDivElement>(null);
   const [items, setItems] = useState<Item[][]>([]);
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const [hoveredVideo, setHoveredVideo] = useState<string | null>(null);
+  const [isEffectActive, setIsEffectActive] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsEffectActive(window.innerWidth > 1000);
+    };
+  
+    handleResize();
+  
+    window.addEventListener('resize', handleResize);
+  
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (window.innerWidth <= 800px) return; // Disable on mobile
+    if (!isEffectActive || !galleryRef.current) return;
 
     const { clientX, clientY, currentTarget } = e;
     const { width, height } = currentTarget.getBoundingClientRect();
