@@ -153,7 +153,7 @@ const Hero: React.FC = () => {
             width="80%"
             height="80%"
           />
-          <button className="close-button z-20 absolute text-[4rem]" onClick={handleCloseVideo}>
+          <button className="close-button z-20 absolute text-[2.5rem]" onClick={handleCloseVideo}>
             x
           </button>
         </div>
