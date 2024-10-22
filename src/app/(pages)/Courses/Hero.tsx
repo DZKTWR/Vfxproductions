@@ -6,8 +6,6 @@ import  { motion }  from 'framer-motion';
 import Link from "next/link";
 import { useLanguage } from '@/components/context/LanguageContext';
 
-
-
 // Variantes del contenedor padre 
 const containerVariants = {
   hidden: {},
@@ -22,6 +20,7 @@ const itemsCotainerV = {
   hidden: { y: 100, opacity: 0 },
   visible: { y: 0 ,opacity: 1, transition: { ease: "easeOut", duration: 0.5} },
 };
+
 
 
 const Hero = () => {

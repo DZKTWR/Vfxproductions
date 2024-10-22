@@ -83,7 +83,7 @@ const Navbares = () => {
       <div
       id="header"
       className='base-navbar py-2 px-9 flex items-center fixed top-[20px] max-w-[38rem] mx-auto z-[60]
-      justify-between inset-x-0 border dark:border-white/[0.7]  bg-[#454545]/10 backdrop-blur-md rounded-full' 
+      justify-between inset-x-0 border dark:border-white/[0.7] bg-[#121315e0] backdrop-blur-md rounded-full' 
       >  
         <nav 
         className='flex flex-grow justify-evenly navbar'>
@@ -103,7 +103,7 @@ const Navbares = () => {
         <div
           id="menu-backdrop"
           ref={menuBackDropRef}
-          className="absolute bg-white/5 backdrop-blur-lg rounded 
+          className="absolute bg-white/15 backdrop-blur-lg rounded 
           translate-x-[var(--left)] translate-y-[var(--top)]
           left-[3.2rem]
           w-[var(--width)] h-[var(--height)]

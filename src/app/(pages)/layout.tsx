@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import Curve from "@/components/curveanim/curve";
 
+
 export default function Layout (
     { children }: { children: React.ReactNode }) 
     {
