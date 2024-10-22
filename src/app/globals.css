@@ -1606,6 +1606,37 @@
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery {
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+        padding: 1em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    #videoName {
+        font-size: 1rem;
+    }
+}
+
+
+
 /**responsive general**/
 @media (min-width: 1210px) {
     /**section active courses**/
