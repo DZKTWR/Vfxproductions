@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
   const [hoveredVideo, setHoveredVideo] = useState<string | null>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (window.innerWidth <= 768) return; // Disable on mobile
+    if (window.innerWidth <= 800px) return; // Disable on mobile
 
     const { clientX, clientY, currentTarget } = e;
     const { width, height } = currentTarget.getBoundingClientRect();
