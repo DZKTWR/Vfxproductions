@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from "next/link";
+import {DateInput} from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { useLanguage } from '@/components/context/LanguageContext';
   // Header app  
@@ -103,26 +104,34 @@ const Herocontent = () => {
                       <Link href="">
                          <img src="miku2.png" alt="" className='rounded-3xl'/>
                       </Link>
+                      <h2 className='text-[1rem] text-white'></h2>
                     </div>
                     <div className='imgrcus-2'>
                       <Link href="">
                          <img src="miku2.png" alt="" className='rounded-3xl'/>
                       </Link>
+                        <DateInput 
+                          label={"Birth date"} 
+                          isRequired
+                          defaultValue={("2024-04-04")} 
+                        />
                     </div>
                     <div className='imgrcus-3'>
                       <Link href="">
                          <img src="miku2.png" alt="" className='rounded-3xl'/>
                       </Link>
+                      <h2 className='text-[1rem] text-white'>fecha: </h2>
                     </div>
                     <div className='imgrcus-4'>
                       <Link href="">
                          <img src="miku2.png" alt="" className='rounded-3xl'/>
                       </Link>
+                      <h2 className='text-[1rem] text-white'>fecha: </h2>
                     </div>
                 </div>
             </section>
-              <div>
-                <h2></h2>
+              <div className='absolute flex justify-center inset-x-0'>
+                <h2 className='text-[3rem] text-white'>coming soon</h2>
               </div>
         </main>
       </section>
