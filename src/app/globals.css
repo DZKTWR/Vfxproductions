@@ -1635,7 +1635,115 @@
 }
 
 
+/**Recourses**/
+.sctinrcurs-1{
+    display: none;
+}
+.sctinrcurs-2{
+    display: none;
+}
 
+@media (max-width: 1350px) {
+    .mainrecur1{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+}
+@media (max-width: 1100px) {
+    .mainrecur1{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .title-rcurs{
+        font-size: 3rem;
+    }
+    .secriontext-recurs{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+@media (max-width: 800px) {
+    .mainrecur1{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .title-rcurs{
+        font-size: 2.5rem;
+    }
+    .text-rcurs{
+        font-size: 1rem;
+    }
+    .navbar-recrus{
+        flex-wrap: wrap;
+        font-size: 1rem;
+        gap: 2rem;
+    }
+    .secriontext-recurs{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .sectionrecursimgs-1{
+        gap: 0.2rem;
+        flex-wrap: wrap;
+    }
+    .imgrcus-1 img{
+        height: 80%;
+    }
+    .imgrcus-2 img{
+        height: 80%;
+    }
+    .imgrcus-3 img{
+        height: 80%;
+    }
+    .imgrcus-4 img{
+        height: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .mainrecur1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .title-rcurs{
+        font-size: 2rem;
+    }
+    .title-rcs1{
+        font-size: 2rem;
+    }
+    .text-rcurs{
+        font-size: 1rem;
+    }
+    .sctinrcurs-3{
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-recrus{
+        flex-wrap: wrap;
+        font-size: 1rem;
+        gap: 2rem;
+    }
+    .secriontext-recurs{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .sectionrecursimgs-1{
+        gap: 0.2rem;
+        flex-wrap: wrap;
+    }
+    .imgrcus-1 img{
+        height: 80%;
+    }
+    .imgrcus-2 img{
+        height: 80%;
+    }
+    .imgrcus-3 img{
+        height: 80%;
+    }
+    .imgrcus-4 img{
+        height: 80%;
+    }
+}
 /**responsive general**/
 @media (min-width: 1210px) {
     /**section active courses**/

@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useLanguage } from '@/components/context/LanguageContext';
   // Header app  
@@ -24,7 +25,7 @@ const Herocontent = () => {
   const { t } = useLanguage()
   return (
     <>
-      <section className='pt-20 pb-40 justify-center m-auto'>
+      <section className=' pb-20 justify-center m-auto'>
         <header className='relative pt-10 pb-10 px-9 flex items-center mx-auto justify-center inset-x-0'>
           <nav className='flex justify-between '>
             <motion.ul 
@@ -32,7 +33,7 @@ const Herocontent = () => {
                   animate="visible"
                   variants={container2Variants} 
               className='flex text-[#000000] text-base [&>li>button]:font-[500] [&>li>button]:inline-block [&>li>button]:mx-8
-                [&>li>button]:px-9 [&>li>button]:py-2 [&>li>button]:roboto-font [&>li>button]:border [&>li>button]:rounded-3xl [&>li>button]:bg-white'>
+                [&>li>button]:px-9 [&>li>button]:py-2 [&>li>button]:roboto-font [&>li>button]:border [&>li>button]:rounded-3xl [&>li>button]:bg-white navbar-recrus'>
               <motion.li
                 variants={item2Variants}
               ><button >After Effets</button></motion.li>
@@ -48,8 +49,8 @@ const Herocontent = () => {
             </motion.ul>
           </nav>
         </header>
-        <main className='relative pt-48 pb-1 px-36 '>
-            <section className='flex flex-col pb-20'>
+        <main className='relative pt-5 pb-1 px-36 mainrecur1'>
+            <section className='flex flex-col pb-20 sctinrcurs-1'>
                 <motion.div className='pb-12'>
                     <h1 className='text-[3.2rem] text-white font-text'>
                        {t('MOST POPULAR')}  
@@ -70,7 +71,7 @@ const Herocontent = () => {
                     </div>
                 </div>
             </section>
-            <section className='flex flex-col py-24'>
+            <section className='flex flex-col py-24 sctinrcurs-2'>
                 <motion.div className='pb-12'>
                     <h1 className='text-[3.2rem] text-white font-text'>
                         {t('RECENTLY ADDED')} 
@@ -91,27 +92,38 @@ const Herocontent = () => {
                     </div>
                 </div>
             </section>
-            <section className='flex flex-col py-24'>
-                <motion.div className='pb-12'>
-                    <h1 className='text-[3.2rem] text-white font-text'>
+            <section className='flex flex-col py-24 sctinrcurs-3'>
+                <motion.div className='pb-12 '>
+                    <h1 className='text-[3.2rem] text-white font-text title-rcs1'>
                         {t('ACTIVE PACKS')} 
                     </h1>
                 </motion.div>
-                <div className='flex flex-row gap-6'>
-                    <div>
-                        <img src="miku2.png" alt="" className='rounded-3xl'/>
+                <div className='flex flex-row gap-6 sectionrecursimgs-1'>
+                    <div className='imgrcus-1'>
+                      <Link href="">
+                         <img src="miku2.png" alt="" className='rounded-3xl'/>
+                      </Link>
                     </div>
-                    <div>
-                        <img src="miku2.png" alt="" className='rounded-3xl'/>
+                    <div className='imgrcus-2'>
+                      <Link href="">
+                         <img src="miku2.png" alt="" className='rounded-3xl'/>
+                      </Link>
                     </div>
-                    <div>
-                        <img src="miku2.png" alt="" className='rounded-3xl'/>
+                    <div className='imgrcus-3'>
+                      <Link href="">
+                         <img src="miku2.png" alt="" className='rounded-3xl'/>
+                      </Link>
                     </div>
-                    <div>
-                        <img src="miku2.png" alt="" className='rounded-3xl'/>
+                    <div className='imgrcus-4'>
+                      <Link href="">
+                         <img src="miku2.png" alt="" className='rounded-3xl'/>
+                      </Link>
                     </div>
                 </div>
             </section>
+              <div>
+                <h2></h2>
+              </div>
         </main>
       </section>
     </>

@@ -127,8 +127,8 @@ const Navbar = () => {
           </button>
           </Magnetic>
           <Magnetic>
-          <button className='text-base text-white border border-white py-2 px-8 rounded-full'>
-            {t('Sign Up')}
+          <button className='text-base text-white border border-white py-2 px-9 rounded-full'>
+            {t('SignUp')}
           </button>
           </Magnetic>
         </div>
