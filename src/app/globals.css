@@ -1587,6 +1587,7 @@
     }
 
     .item.mobile-item .preview-img img {
+        height: 70%;
         opacity: 1;
     }
 
