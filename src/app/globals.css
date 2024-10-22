@@ -1556,7 +1556,7 @@
     }
 
     .gallery.mobile-gallery {
-        width: 100%;
+        width: auto;
         height: auto;
         position: static;
         transform: none;
@@ -1571,6 +1571,7 @@
 
     .item.mobile-item {
         width: 100%;
+        height: 100%;
         margin-bottom: 1em;
         transform: none;
         transition: none;
