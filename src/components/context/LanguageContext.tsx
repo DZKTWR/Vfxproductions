@@ -79,6 +79,14 @@ const translations: { [key: string]: string } = {
     "Privacy Policy":"Política de privacidad",
     "Policy":"Política",
     "Do you want to help me ?":"¿Quieres ayudarme?",
+
+
+
+    "Coming soon":"Muy Pronto",
+    "Date: 20/11/2024":"Fecha: 20/11/2024",
+    "Date: 15/11/2024":"Fecha: 15/11/2024",
+    "Date: 10/11/2024":"Fecha: 10/11/2024",
+    "Date: 30/10/2024":"Fecha: 30/10/2024",
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
