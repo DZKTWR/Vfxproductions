@@ -25,7 +25,7 @@ const Herocontent = () => {
                 </div>
             <section className='py-28 items-center '>
                 <div className='grid gap-12 sc-container'>
-                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 sact-content-1 smts-content'>
+                    <Link href='https://youtu.be/udLIaEMpA1A'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 sact-content-1 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
@@ -39,7 +39,7 @@ const Herocontent = () => {
                             </div>
                         </div >
                     </Link>
-                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 sact-content-2 smts-content'>
+                    <Link href='https://youtu.be/udLIaEMpA1A'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 sact-content-2 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
@@ -53,7 +53,7 @@ const Herocontent = () => {
                             </div>
                         </div >
                     </Link>
-                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 sact-content-3 smts-content'>
+                    <Link href='https://youtu.be/udLIaEMpA1A'  className='relative bg-[#1f202266] rounded-3xl p-8 my-2 sact-content-3 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image
@@ -67,7 +67,7 @@ const Herocontent = () => {
                             </div>
                         </div >
                     </Link>
-                    <Link href='#'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 sact-content-4 smts-content'>
+                    <Link href='https://youtu.be/udLIaEMpA1A'  className='relative bg-[#1f202266] rounded-3xl p-8 mt-40 -mb-40 sact-content-4 smts-content'>
                         <div className='flex items-center text-white hover:text-black sc-hvr'>
                             <div className='flex flex-row mst-si-contnent'>
                                 <Image

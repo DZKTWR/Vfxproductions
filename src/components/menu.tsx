@@ -74,7 +74,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
             className="absolute bottom-8 left-8 text-black/40 hover:text-black transition-colors font-text"
           >
             <Magnetic>
-              <Link href="" className='text-[1.2rem]'>Paypal</Link>
+              <Link href="https://paypal.me/diegoacosta332?country.x=CO&locale.x=es_XC" className='text-[1.2rem]'>Paypal</Link>
             </Magnetic>
           </motion.div>
           <motion.div

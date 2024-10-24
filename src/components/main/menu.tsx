@@ -72,8 +72,17 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
             transition={{ delay: 0.5 }}
             className="absolute bottom-8 left-8 text-black font-text"
           >
-            <p>dazkon@vfx.com</p>
-            <p>Paypal</p>
+            <Magnetic>
+              <Link href="https://paypal.me/diegoacosta332?country.x=CO&locale.x=es_XC" className='text-[1.2rem]'>Paypal</Link>
+            </Magnetic>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="absolute bottom-8 right-8 text-black font-text text-[1.2rem] "
+          >
+             <p>dazkon@vfx.com</p>
           </motion.div>
         </motion.div>
       )}
